@@ -1,3 +1,4 @@
+import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import requests
@@ -5,7 +6,7 @@ import io
 from PIL import Image
 import time
 
-PATH = "C:\\Users\\Journey Admin\\OneDrive - Icrave Design\\Desktop\\Scrapping\\chromedriver.exe"
+PATH = "C:\\Users\\Journey Admin\\OneDrive - Icrave Design\\Projects\\Python\\Xome\\Scraping"
 
 wd = webdriver.Chrome(PATH)
 
@@ -14,7 +15,7 @@ def get_images_from_google(wd, delay, max_images):
 		wd.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 		time.sleep(delay)
 
-	url = "https://www.google.com/search?q=one+piece+wallpaper&tbm=isch&ved=2ahUKEwjakKvG-qT_AhUAj4QIHRFUBgEQ2-cCegQIABAA&oq=one+piece+&gs_lcp=CgNpbWcQARgAMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgUIABCABDIFCAAQgAQyBQgAEIAEOggIABCABBCxAzoKCAAQigUQsQMQQ1D9FliQKWClOmgBcAB4AIABfYgBugySAQM5LjeYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABAMABAQ&sclient=img&ei=PBJ6ZNqCO4CekvQPkaiZCA&bih=961&biw=1920&rlz=1C1CHBD_enCR1044CR1044"
+	url = "https://www.xome.com/auctions"
 	wd.get(url)
 
 	image_urls = set()
@@ -23,7 +24,7 @@ def get_images_from_google(wd, delay, max_images):
 	while len(image_urls) + skips < max_images:
 		scroll_down(wd)
 
-		thumbnails = wd.find_elements(By.CLASS_NAME, "Q4LuWd")
+		thumbnails = wd.find_elements(By.CLASS_NAME, "property-link")
 
 		for img in thumbnails[len(image_urls) + skips:max_images]:
 			try:
@@ -31,18 +32,40 @@ def get_images_from_google(wd, delay, max_images):
 				time.sleep(delay)
 			except:
 				continue
+			modalParent = wd.find_elements(By.CLASS_NAME, "modal")
+			for modal in modalParent:
+       			z = modal.find_elements_by_css_selector("*")
+    			print("Imagen modal:", z)
+				for x in z:
+					print(x)
+				#Al parecer no hace una busqueda en profundidad, sino que se queda buscando en los mismos hijos del modal actual
+				"""			
+    			images = modal.find_elements(By.CLASS_NAME, "map-link1")
+    			print("Images: ", images)
+				for image in images:
+					print("imagen como tal", img.get_attribute('class'))
+					children = image.find_elements(By.TAG_NAME,"img")
+					for child in children:
+						print("por obtener el enlace")
+						if child.get_attribute('src') in image_urls:
+							print(">>>>>>>>>>>>>> Hizo skip!!")
+							max_images += 1
+							skips += 1
+							break
 
-			images = wd.find_elements(By.CLASS_NAME, "r48jcc")
-			for image in images:
-				if image.get_attribute('src') in image_urls:
-					max_images += 1
-					skips += 1
-					break
+						if child.get_attribute('src') and 'http' in child.get_attribute('src'):
+							image_urls.add(child.get_attribute('src'))
+							print(f"Found {len(image_urls)}")
+			print("close button")
+			for close in modalParent:
+				closeButton = modal.find_elements(By.CLASS_NAME, "close-link")
 
-				if image.get_attribute('src') and 'http' in image.get_attribute('src'):
-					image_urls.add(image.get_attribute('src'))
-					print(f"Found {len(image_urls)}")
-
+				try:
+					closeButton.click()
+					time.sleep(delay)
+				except:
+					continue
+				"""		
 	return image_urls
 
 
@@ -61,6 +84,12 @@ def download_image(download_path, url, file_name):
 		print('FAILED -', e)
 
 urls = get_images_from_google(wd, 1, 6)
+
+destinationFolderName = "imgs"
+folderExists = os.path.exists(PATH + "\\" + destinationFolderName)
+if not folderExists:
+	os.makedirs(PATH + "\\" + destinationFolderName)
+
 
 for i, url in enumerate(urls):
 	download_image("imgs/", url, str(i) + ".jpg")
