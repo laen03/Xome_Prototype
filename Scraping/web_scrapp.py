@@ -1,6 +1,7 @@
 import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import NoSuchElementException
 import requests
 import io
 from PIL import Image
@@ -20,52 +21,73 @@ def get_images_from_google(wd, delay, max_images):
 
 	image_urls = set()
 	skips = 0
+	nextPageButtonID = "right-navigation"
+	imagesPerPage = 0
 
 	while len(image_urls) + skips < max_images:
 		scroll_down(wd)
 
-		thumbnails = wd.find_elements(By.CLASS_NAME, "property-link")
+		
 
+		thumbnails = wd.find_elements(By.CLASS_NAME, "property-link")
 		for img in thumbnails[len(image_urls) + skips:max_images]:
+			# Revisar la cantidad de thumbnails descargados para pasar de página
+			# (cuando llega a Found 48 imprimió total thumbnails 250)
+			print("imagesPerPage", imagesPerPage)
 			try:
 				img.click()
 				time.sleep(delay)
+				imagesPerPage += 1
 			except:
 				continue
-			modalParent = wd.find_elements(By.CLASS_NAME, "modal")
-			for modal in modalParent:
-       			z = modal.find_elements_by_css_selector("*")
-    			print("Imagen modal:", z)
-				for x in z:
-					print(x)
-				#Al parecer no hace una busqueda en profundidad, sino que se queda buscando en los mismos hijos del modal actual
-				"""			
-    			images = modal.find_elements(By.CLASS_NAME, "map-link1")
-    			print("Images: ", images)
+			
+			wd.switch_to.frame("iframe-flyout-body")
+			try:
+				# Some properties don't have an image, the next line is for triggering the except
+				wd.find_element(By.CLASS_NAME, "no-image-container")
+				print("Property without picture")
+				wd.switch_to.default_content()
+				closeButton = wd.find_element(By.ID, "top-navigation-flyout-close")
+				print("button found")
+				closeButton.click()
+				time.sleep(delay)
+				max_images += 1
+				skips += 1
+				break
+			except NoSuchElementException:
+				firstImage = wd.find_element(By.CLASS_NAME, "flex-active-slide")
+				images = firstImage.find_elements(By.CLASS_NAME, "map-link1")
+
 				for image in images:
-					print("imagen como tal", img.get_attribute('class'))
-					children = image.find_elements(By.TAG_NAME,"img")
-					for child in children:
+					print("imagen como tal")
+					children = image.find_element(By.TAG_NAME,"img")
+					if children:
 						print("por obtener el enlace")
-						if child.get_attribute('src') in image_urls:
+						if children.get_attribute('src') in image_urls:
 							print(">>>>>>>>>>>>>> Hizo skip!!")
 							max_images += 1
 							skips += 1
 							break
 
-						if child.get_attribute('src') and 'http' in child.get_attribute('src'):
-							image_urls.add(child.get_attribute('src'))
+						if children.get_attribute('src') and 'http' in children.get_attribute('src'):
+							image_urls.add(children.get_attribute('src'))
 							print(f"Found {len(image_urls)}")
-			print("close button")
-			for close in modalParent:
-				closeButton = modal.find_elements(By.CLASS_NAME, "close-link")
-
+							break
+				wd.switch_to.default_content()
+				time.sleep(delay)
+				closeButton = wd.find_element(By.ID, "top-navigation-flyout-close")
 				try:
 					closeButton.click()
 					time.sleep(delay)
 				except:
 					continue
-				"""		
+		print("Total thumbnails", len(thumbnails))
+		button = wd.find_element(By.ID, "right-navigation")
+		try:
+			button.click()
+			time.sleep(delay)
+		except:
+			continue		
 	return image_urls
 
 
@@ -83,7 +105,7 @@ def download_image(download_path, url, file_name):
 	except Exception as e:
 		print('FAILED -', e)
 
-urls = get_images_from_google(wd, 1, 6)
+urls = get_images_from_google(wd, 1, 51)
 
 destinationFolderName = "imgs"
 folderExists = os.path.exists(PATH + "\\" + destinationFolderName)
