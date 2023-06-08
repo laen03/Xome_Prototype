@@ -42,7 +42,7 @@
                                     <ul class="row">
                                 `;
                 data.forEach( property =>{
-                    output += `<li class="columns"><img width="850" height="850" src="${property.url}"></li>`;
+                    output += `<li><img width="850" height="850" src="${property.url}"></li>`;
                 });
                 output += '</ul>'
                 document.getElementById('screenshots').innerHTML = output;
@@ -57,6 +57,6 @@
         
         
     </script>
-    <script src="js/FileSaver.min.js"></script>
+    <script src="FileSaver.js"></script>
   </body>
 </html>
