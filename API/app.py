@@ -2,27 +2,33 @@ import os
 import io
 import openai
 from flask import Flask
+from flask_cors import CORS
+from flask import url_for
+from flask import request
 from PIL import Image
 openai.api_key = "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"
 
 
 app = Flask(__name__)
-"""
-@app.route('/generation')
+CORS(app)
+
+@app.route('/', methods=['GET'])
 def index():
     try:
+        data = request.args.get('prompt')
+        print(data)
         response = openai.Image.create(
-            prompt = "a cat fishing on a lake, cartoon style",
-            n = 1,
-            size ="512x512"
+            prompt = data,
+            n = 10,
+            size ="1024x1024"
         )
-        return response.data[0].url
+        return response.data
     except openai.error.InvalidRequestError:
         return "Error de conexión"
-"""
+
 
 @app.route('/edit')
-def index():
+def edit():
     image = Image.open("Img4.png")
     width, height = 256, 256
     image = image.resize((width, height))
@@ -46,9 +52,9 @@ def index():
     return response.data
 
 
-"""
+
 @app.route('/variation')
-def index():
+def variation():
     image = Image.open("Img1.png")
     width, height = 256, 256
     image = image.resize((width, height))
@@ -62,7 +68,11 @@ def index():
         size="512x512"
     )
     return response.data
-"""
+
+@app.route("/favicon.ico")
+def favicon():
+    return url_for('static', filename='data:,')
+
 
 if __name__ == "__main__":
     app.run(debug=True)

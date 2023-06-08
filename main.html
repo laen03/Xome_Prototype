@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images!</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="./stylesheet.css" type="text/css" />
+    <style type="text/css">.body { width: auto; }</style>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div class="flex">
+        <div>
+            <input type="text" placeholder="Add your prompt..." />
+            <button class="shake">
+                <span class="submit">Submit</span>
+            </button>
+        </div>
+    </div> 
+    <div class="flex" >
+        <div id="loader"></div>
+    </div>
+    
+    <div id="screenshots" class="property"></div>
+    
+    <script src="//code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script>
+
+        $('button').click(function() {
+
+            document.getElementById('loader').classList.add('loader');
+            var prompt = document.querySelector('input').value;
+
+            // Get data from URL
+            fetch('http://127.0.0.1:5000?prompt='+ prompt, { method:"GET"})
+            .then(res => {
+                return res.json();
+            })
+            .then( data  => {
+                document.getElementById('loader').classList.remove('loader');
+                let output =    `<h2>Gnerated properties</h2>'
+                                    <ul class="row">
+                                `;
+                data.forEach( property =>{
+                    output += `<li class="columns"><img width="850" height="850" src="${property.url}"></li>`;
+                });
+                output += '</ul>'
+                document.getElementById('screenshots').innerHTML = output;
+                $('img').click(function (element) {
+                    var text = $(element.target).attr('src');
+                    saveAs(text, text.substring(text.lastIndexOf('/')+2))
+                    alert(text)
+                });
+            })
+        .catch((err) => console.log(err))
+        });
+        
+        
+    </script>
+    <script src="js/FileSaver.min.js"></script>
+  </body>
+</html>
