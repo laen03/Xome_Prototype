@@ -7,12 +7,13 @@ from flask import url_for
 from flask import request
 from PIL import Image
 
-'''
-Api Key subscribed account
-openai.api_key = "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"
-'''
 
+openai.api_key = "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"
+
+'''
+Api Key backup account
 openai.api_key = "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"
+'''
 
 app = Flask(__name__)
 CORS(app)
