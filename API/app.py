@@ -6,8 +6,13 @@ from flask_cors import CORS
 from flask import url_for
 from flask import request
 from PIL import Image
-openai.api_key = "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"
 
+'''
+Api Key subscribed account
+openai.api_key = "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"
+'''
+
+openai.api_key = "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"
 
 app = Flask(__name__)
 CORS(app)
@@ -23,8 +28,8 @@ def index():
             size ="1024x1024"
         )
         return response.data
-    except openai.error.InvalidRequestError:
-        return "Error de conexión"
+    except openai.error.InvalidRequestError as e:
+        return str(e)
 
 
 @app.route('/edit')

@@ -32,7 +32,7 @@
             var prompt = document.querySelector('input').value;
 
             // Get data from URL
-            fetch('http://127.0.0.1:5000?prompt='+ prompt, { method:"GET"})
+            fetch('http://127.0.0.1:5000?prompt='+ prompt, { method:"GET", headers: {"Content-Type": "application/json"}})
             .then(res => {
                 return res.json();
             })
@@ -51,7 +51,7 @@
                     saveAs(text, text.substring(text.lastIndexOf('/')+2))
                 });
             })
-        .catch((err) => console.log(err))
+            .catch((err) => console.log(err))
         });
         
         
