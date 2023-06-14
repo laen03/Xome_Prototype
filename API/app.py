@@ -1,6 +1,7 @@
 import os
 import io
 import openai
+import json
 from flask import Flask
 from flask_cors import CORS
 from flask import url_for
@@ -74,6 +75,29 @@ def variation():
         size="512x512"
     )
     return response.data
+
+
+@app.route('/read')
+def readJson():
+    # Opening JSON file
+    f = open('data.json')
+    
+    # returns JSON object as 
+    # a dictionary
+    data = json.load(f)
+    
+    # Iterating through the json
+    # list
+    cont = 1
+    for i in data:
+        print(cont)
+        print(i)
+        cont+=1
+    
+    # Closing file
+    f.close()
+
+    return str(cont)
 
 @app.route("/favicon.ico")
 def favicon():
