@@ -2,6 +2,7 @@ import os
 import io
 import openai
 import json
+import requests
 from flask import Flask
 from flask_cors import CORS
 from flask import url_for
@@ -26,8 +27,8 @@ def index():
         print(data)
         response = openai.Image.create(
             prompt = data,
-            n = 10,
-            size ="1024x1024"
+            n = 3,
+            size ="512x512"
         )
         return response.data
     except openai.error.InvalidRequestError as e:
@@ -77,6 +78,8 @@ def variation():
     return response.data
 
 
+PATH = "C:\\Users\\Journey Admin\\OneDrive - Icrave Design\\Projects\\Python\\Xome\\API"
+
 @app.route('/read')
 def readJson():
     # Opening JSON file
@@ -84,20 +87,64 @@ def readJson():
     
     # returns JSON object as 
     # a dictionary
-    data = json.load(f)
+    properties = json.load(f)
     
     # Iterating through the json
     # list
-    cont = 1
-    for i in data:
-        print(cont)
-        print(i)
-        cont+=1
     
+    # A house photography taken from the street, two-story single family house, 2 bedrooms, outdoors, 
+    # summer day in Jackson city, extreme long-shot on iPhone 6
+    
+    for property in properties:
+        prompt = "A charming "
+        
+        # Number of rooms
+        rooms = str(len(property["rooms"]))
+        prompt += rooms + "-room, "
+        
+        # Property size
+        buildingSize = str(property["buildingSize"])
+        prompt += buildingSize + " sq. ft. "
+        
+        propertyType = property["propertyType"]
+        if propertyType == "SINGLE":
+            prompt += "single-family house, featuring a welcoming porch with steps leading up and a side porch. The image is taken from the street at midday."
+        elif propertyType == "DUPLEX":
+            prompt += "duplex house, featuring a welcoming porch with steps leading up and a side porch. The image is taken from the street at midday."
+        elif propertyType == "TOWNHOUSE":
+            prompt += "brick townhouse, nestled in a tree-lined street, with unique architectural details that add character and charm. The sun is shining and the photo is taken from the street."
+        elif propertyType == "MOBILE":
+            continue
+        try:
+            response = openai.Image.create(
+                prompt = prompt,
+                n = 3,
+                size ="512x512"
+            )
+            
+            
+            for url in response.data:
+                file_name = url["url"].split("/")[6].split("?")[0].split(".")[0]
+                print(file_name)
+                try:
+                    image_content = requests.get(url["url"]).content
+                    image_file = io.BytesIO(image_content)
+                    image = Image.open(image_file)
+                    file_path = "images/" + file_name + ".png"
+
+                    with open(file_path, "wb") as f:
+                        image.save(f, "PNG")
+
+                    print("Success")
+                except Exception as e:
+                    print('FAILED -', e)
+        except openai.error.InvalidRequestError as e:
+            return str(e)
+
     # Closing file
     f.close()
 
-    return str(cont)
+    return str(prompt)
 
 @app.route("/favicon.ico")
 def favicon():
