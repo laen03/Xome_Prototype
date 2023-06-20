@@ -118,7 +118,7 @@ def readJson():
         try:
             response = openai.Image.create(
                 prompt = prompt,
-                n = 3,
+                n = 4,
                 size ="512x512"
             )
             
