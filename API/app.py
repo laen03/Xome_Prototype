@@ -118,7 +118,7 @@ def readJson():
         try:
             response = openai.Image.create(
                 prompt = prompt,
-                n = 4,
+                n = 1,
                 size ="512x512"
             )
             
@@ -133,7 +133,7 @@ def readJson():
                     file_path = "images/" + file_name + ".png"
 
                     with open(file_path, "wb") as f:
-                        image.save(f, "PNG")
+                        image.save(f, "PNG", quality = 3)
 
                     print("Success")
                 except Exception as e:
