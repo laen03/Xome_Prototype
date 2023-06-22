@@ -106,6 +106,25 @@ def readJson():
         buildingSize = str(property["buildingSize"])
         prompt += buildingSize + " sq. ft. "
         
+        
+        # Property value
+        propertyValue = property["expectedValue"]
+        # barata 0-250 000
+        # medio: 250 001 - 700 000
+        # alto: 700 001 - en adelante
+        
+        if propertyValue <= 250000:
+            pass
+        elif propertyValue > 250000 and propertyValue <= 700000:
+            if int(rooms) > 10:
+                # casa baja
+                pass
+            elif int(rooms) <= 10:
+                # casa alta
+                pass
+        else:
+            # lo más caro papuuuu
+            pass
         propertyType = property["propertyType"]
         if propertyType == "SINGLE":
             prompt += "single-family house, featuring a welcoming porch with steps leading up and a side porch. The image is taken from the street at midday."
@@ -130,10 +149,10 @@ def readJson():
                     image_content = requests.get(url["url"]).content
                     image_file = io.BytesIO(image_content)
                     image = Image.open(image_file)
-                    file_path = "images/" + file_name + ".png"
+                    file_path = "images/" + file_name + ".jpeg"
 
                     with open(file_path, "wb") as f:
-                        image.save(f, "PNG", quality = 3)
+                        image.save(f, "JPEG", quality = 20, optimize=True)
 
                     print("Success")
                 except Exception as e:
