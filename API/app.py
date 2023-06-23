@@ -231,6 +231,23 @@ def readJson():
 
     return str(prompt)
 
+@app.route("/resize")
+def resize():
+    pathIMG = "C:\\Users\\Journey Admin\OneDrive - Icrave Design\\Desktop\\Git\\Xome_Prototype\API\\resizeIMG\\"
+    dir = os.listdir(pathIMG)
+    try:
+        for imgHQ in dir:
+            print(pathIMG+imgHQ)
+            img = Image.open(pathIMG+imgHQ)
+            f, e = os.path.splitext(pathIMG+imgHQ)
+            img.save(f + ' resized.jpeg', 'JPEG', quality=30, optimize=True)
+            print("actualizado")
+    except:
+        print("error")
+    return "Succes"
+
+
+
 @app.route("/favicon.ico")
 def favicon():
     return url_for('static', filename='data:,')
