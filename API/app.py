@@ -81,14 +81,48 @@ def variation():
 
 PATH = "C:\\Users\\Journey Admin\\OneDrive - Icrave Design\\Projects\\Python\\Xome\\API"
 
+def concatenateJSONs():
+    highSeedArrayJSON = open('highSeedArray.json')
+    lowSeedArrayJSON = open('lowSeedArray.json')
+    
+    mediumSeedArray1JSON = open('mediumSeedArray1.json')
+    mediumSeedArray2JSON = open('mediumSeedArray2.json')
+    
+    
+    highSeedArray = json.load(highSeedArrayJSON)
+    lowSeedArray = json.load(lowSeedArrayJSON)
+    
+    mediumSeedArray1 = json.load(mediumSeedArray1JSON)
+    mediumSeedArray2 = json.load(mediumSeedArray2JSON)
+    
+    properties = []
+    properties.extend(highSeedArray)
+    properties.extend(lowSeedArray)
+    properties.extend(mediumSeedArray1)
+    properties.extend(mediumSeedArray2)
+    
+    return properties
+
+
+def converMultiHouse():
+    tempList = ["TOWNHOUSE", "DUPLEX"]
+    # hacer random para que elija entre townhouse y duplex
+    return random.choice(tempList)
+
+
 @app.route('/read')
 def readJson():
+    concatenateJSONs()
+    
+
     # Opening JSON file
     f = open('data.json')
     
     # returns JSON object as 
     # a dictionary
-    properties = json.load(f)
+    #properties = json.load(f)
+    
+    properties = concatenateJSONs()
     
     # Iterating through the json
     # list
@@ -105,10 +139,11 @@ def readJson():
             "Utah":"Salt Lake", 
             "Florida":"Miami", 
             "New York": "Brooklyn", 
-            "Pennsylvania": "Philadelphia"
+            "Pennsylvania": "Philadelphia",
+            "New Mexico": "Albuquerque"
         }
         state, district = random.choice(list(places.items()))
-        prompt2 = "Create a color photography taken from the street in " + state + " of "
+        prompt2 = "A photography taken from the street in " + state + " of "
         # Number of rooms
         rooms = str(len(property["rooms"]))
         prompt += rooms + "-room, "
@@ -127,21 +162,27 @@ def readJson():
         # alto: 700 001 - en adelante
         
         
-        propertyType = property["propertyType"]
+        propertyType = property["propertyType"]   
         if propertyType == "MOBILE":
             weather = ["a summer", "a winter", "a cloudy", "an overcast"]
-            prompt = prompt2 = "A cozy, weathered mobile home nestled in a nice neighborhood surrounded by other mobile houses, with a clear blue sky overhead. The photo was taken from the street in " + random.choice(weather) + " day"
+            prompt = "A cozy, weathered mobile home nestled in a nice neighborhood surrounded by other mobile houses, with a clear blue sky overhead. The photo was taken from the street in " + random.choice(weather) + " day by a skilled photographer with a professional-grade DSLR camera."
+            prompt2 = prompt
         else:
+            if property["propertyType"] == "MULTI":
+                propertyType = converMultiHouse()
             # "Cheap" properties
             if propertyValue <= 250000:
                 if propertyType == "SINGLE":
-                    prompt2 += "an old, one-story house built in 1971, nestled in a peaceful suburban neighborhood, surrounded by neat and tidy greenery."
+                    prompt2 += "a low-cost, one-story house built in 80's, nestled in a peaceful suburban neighborhood, surrounded by neat and tidy greenery, captured by a skilled photographer with a professional-grade DSLR camera."
                     prompt = prompt2
                 elif propertyType == "DUPLEX":
-                    prompt2 += "an old, two-story house built in 1971, nestled in a peaceful suburban neighborhood, surrounded by neat and tidy greenery."
+                    prompt2 += "a low-cost, two-story house built in 80's, nestled in a peaceful suburban neighborhood, surrounded by neat and tidy greenery, captured by a skilled photographer with a professional-grade DSLR camera."
                     prompt = prompt2
                 elif propertyType == "TOWNHOUSE":
-                    prompt2 += "a townhouse, with cheap facade. The scene is rich with detail and character, featuring lush green trees. The image captures the essence of urban low class architecture in this iconic " + state + ". The prompt's careful attention to detail, composition, and mood ensures that the DALL-E model can produce stunning and high-quality images of one of " + district + "'s most iconic architectural styles."
+                    prompt2 += "a townhouse, with cheap facade. The scene is rich with detail and character, featuring lush green trees. The image captures the essence of urban low class architecture in this iconic " + state + ". The prompt's careful attention to detail, composition, and mood ensures that the DALL-E model can produce stunning and high-quality images of one of " + district + "'s most iconic architectural styles. The photo was captured by a skilled photographer with a professional-grade DSLR camera"
+                    prompt = prompt2
+                elif property == "CONDO":
+                    prompt2 += "a low-cost, condo property from " + state + ", captured by a skilled photographer with a professional-grade DSLR camera, on a cloudy day."
                     prompt = prompt2
             
             # "Mid-range" properties
@@ -149,45 +190,55 @@ def readJson():
                 # "Cheap" properties
                 if int(rooms) > 10:
                     if propertyType == "SINGLE":
-                        prompt2 += "an old, one-story house built in 1971, nestled in a peaceful suburban neighborhood, surrounded by neat and tidy greenery."
+                        prompt2 += "a low-cost, one-story house built in 80's, nestled in a peaceful suburban neighborhood, surrounded by neat and tidy greenery, captured by a skilled photographer with a professional-grade DSLR camera."
                         prompt = prompt2
                     elif propertyType == "DUPLEX":
-                        prompt2 += "an old, two-story house built in 1971, nestled in a peaceful suburban neighborhood, surrounded by neat and tidy greenery."
+                        prompt2 += "a low-cost, two-story house built in 80's, nestled in a peaceful suburban neighborhood, surrounded by neat and tidy greenery, captured by a skilled photographer with a professional-grade DSLR camera."
                         prompt = prompt2
                     elif propertyType == "TOWNHOUSE":
-                        prompt2 += "a townhouse, with cheap facade. The scene is rich with detail and character, featuring lush green trees. The image captures the essence of urban low class architecture in this iconic " + state + ". The prompt's careful attention to detail, composition, and mood ensures that the DALL-E model can produce stunning and high-quality images of one of " + district + "'s most iconic architectural styles."
+                        prompt2 += "a townhouse, with cheap facade. The scene is rich with detail and character, featuring lush green trees. The image captures the essence of urban low class architecture in this iconic " + state + ". The prompt's careful attention to detail, composition, and mood ensures that the DALL-E model can produce stunning and high-quality images of one of " + district + "'s most iconic architectural styles. The photo was captured by a skilled photographer with a professional-grade DSLR camera."
+                        prompt = prompt2
+                    elif property == "CONDO":
+                        prompt2 += "a low-cost, condo property from " + state + ", captured by a skilled photographer with a professional-grade DSLR camera, on a cloudy day."
                         prompt = prompt2
 
                 # "Expensive" properties
                 elif int(rooms) <= 10:
                     if propertyType == "SINGLE":
-                        prompt += "single-family house, featuring a welcoming porch with steps leading up and a side porch. The image is taken from the street at midday."
+                        prompt += "single-family house, featuring a welcoming porch with steps leading up and a side porch. The photo is taken from the street at midday by a skilled photographer with a professional-grade DSLR camera."
                     
-                        prompt2 += "an new, one-story fancy house built in 2000, nestled in a peaceful suburban neighborhood, surrounded by neat and tidy greenery."
+                        prompt2 += "an new, one-story fancy house built in 2000, nestled in a peaceful suburban neighborhood, surrounded by neat and tidy greenery, captured by a skilled photographer with a professional-grade DSLR camera."
                     elif propertyType == "DUPLEX":
-                        prompt += "duplex house, featuring a welcoming porch with steps leading up and a side porch. The image is taken from the street at midday."
+                        prompt += "duplex house, featuring a welcoming porch with steps leading up and a side porch. The image is taken from the street at midday, captured by a skilled photographer with a professional-grade DSLR camera."
                         
-                        prompt2 += "an new, two-story fancy house built in 2000, nestled in a peaceful suburban neighborhood, surrounded by neat and tidy greenery."
+                        prompt2 += "an new, two-story fancy house built in 2000, nestled in a peaceful suburban neighborhood, surrounded by neat and tidy greenery, captured by a skilled photographer with a professional-grade DSLR camera."
                     elif propertyType == "TOWNHOUSE":
-                        prompt += "brick townhouse, nestled in a tree-lined street, with unique architectural details that add character and charm. The sun is shining and the photo is taken from the street."
+                        prompt += "brick townhouse, nestled in a tree-lined street, with unique architectural details that add character and charm. The sun is shining and the photo is captured from the street by a skilled photographer with a professional-grade DSLR camera."
                         
-                        prompt2 += "a townhouse, with elegant facade. The scene is rich with detail and character, featuring lush green trees. The image captures the essence of urban architecture in this iconic " + state + ". The prompt's careful attention to detail, composition, and mood ensures that the DALL-E model can produce stunning and high-quality images of one of " + district + "'s most iconic architectural styles."
-
-            # "Expensive" properties
+                        prompt2 += "a townhouse, with elegant facade. The scene is rich with detail and character, featuring lush green trees. The image captures the essence of urban architecture in this iconic " + state + ". The prompt's careful attention to detail, composition, and mood ensures that the DALL-E model can produce stunning and high-quality images of one of " + district + "'s most iconic architectural styles. The photo was captured by a skilled photographer with a professional-grade DSLR camera"
+                    
+                    elif property == "CONDO":
+                        prompt2 += "a a modern, sleek condo property from " + state + ", captured by a skilled photographer with a professional-grade DSLR camera, on a cloudy day."
+                        prompt = prompt2
+            # "Expensive" properties high-key lighting
             else:
                 if propertyType == "SINGLE":
-                    prompt += "single-family house, featuring a welcoming porch with steps leading up and a side porch. The image is taken from the street at midday."
-                    
-                    prompt2 += "an new, one-story fancy house built in 2000, nestled in a peaceful suburban neighborhood, surrounded by neat and tidy greenery."
+                    prompt += "single-family house, featuring a welcoming porch with steps leading up and a side porch. The photo is taken from the street at midday by a skilled photographer with a professional-grade DSLR camera."
+                
+                    prompt2 += "an new, one-story fancy house built in 2000, nestled in a peaceful suburban neighborhood, surrounded by neat and tidy greenery, captured by a skilled photographer with a professional-grade DSLR camera."
                 elif propertyType == "DUPLEX":
-                    prompt += "duplex house, featuring a welcoming porch with steps leading up and a side porch. The image is taken from the street at midday."
+                    prompt += "duplex house, featuring a welcoming porch with steps leading up and a side porch. The image is taken from the street at midday, captured by a skilled photographer with a professional-grade DSLR camera."
                     
-                    prompt2 += "an new, two-story fancy house built in 2000, nestled in a peaceful suburban neighborhood, surrounded by neat and tidy greenery."
+                    prompt2 += "an new, two-story fancy house built in 2000, nestled in a peaceful suburban neighborhood, surrounded by neat and tidy greenery, captured by a skilled photographer with a professional-grade DSLR camera."
                 elif propertyType == "TOWNHOUSE":
-                    prompt += "brick townhouse, nestled in a tree-lined street, with unique architectural details that add character and charm. The sun is shining and the photo is taken from the street."
+                    prompt += "brick townhouse, nestled in a tree-lined street, with unique architectural details that add character and charm. The sun is shining and the photo is captured from the street by a skilled photographer with a professional-grade DSLR camera."
                     
-                    prompt2 += "a townhouse, with elegant facade. The scene is rich with detail and character, featuring lush green trees. The image captures the essence of urban architecture in this iconic " + state + ". The prompt's careful attention to detail, composition, and mood ensures that the DALL-E model can produce stunning and high-quality images of one of " + district + "'s most iconic architectural styles."
-        
+                    prompt2 += "a townhouse, with elegant facade. The scene is rich with detail and character, featuring lush green trees. The image captures the essence of urban architecture in this iconic " + state + ". The prompt's careful attention to detail, composition, and mood ensures that the DALL-E model can produce stunning and high-quality images of one of " + district + "'s most iconic architectural styles. The photo was captured by a skilled photographer with a professional-grade DSLR camera"
+                
+                elif property == "CONDO":
+                    prompt2 += "a a modern, sleek condo property from " + state + ", captured by a skilled photographer with a professional-grade DSLR camera, on a cloudy day."
+                    prompt = prompt2
+                    
         if usePrompt1:
             if  propertyType != "TOWNHOUSE":
                 finalPrompt = prompt
@@ -196,14 +247,12 @@ def readJson():
             
         else:
             finalPrompt = prompt2
-        
-            
                     
         try:
             response = openai.Image.create(
                 prompt = finalPrompt,
-                n = 3,
-                size ="512x512"
+                n = 2,
+                size ="1024x1024"
             )
             
             
@@ -217,7 +266,7 @@ def readJson():
                     file_path = "images/" + file_name + ".jpeg"
 
                     with open(file_path, "wb") as f:
-                        image.save(f, "JPEG", quality = 35, optimize=True)
+                        image.save(f, "JPEG", quality = 45, optimize=True)
 
                     print("Success")
                 except Exception as e:
