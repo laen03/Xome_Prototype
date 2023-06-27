@@ -1,0 +1,3779 @@
+[
+    {
+        "amenities": [
+            {
+                "chance": 0.25,
+                "multiplier": 1.04,
+                "impact": 1.03,
+                "name": "Park 1",
+                "distanceFrom": 0.79
+            },
+            {
+                "chance": 0.3,
+                "multiplier": 1.02,
+                "impact": 1.01,
+                "name": "Park 2",
+                "distanceFrom": 0.74
+            },
+            {
+                "chance": 0.29,
+                "multiplier": 1.03,
+                "impact": 1.02,
+                "name": "Shopping Center",
+                "distanceFrom": 0.76
+            },
+            {
+                "chance": 0.44,
+                "multiplier": 1.09,
+                "impact": 1.07,
+                "name": "Recreational Center",
+                "distanceFrom": 0.81
+            }
+        ],
+        "researchables": {
+            "0": [],
+            "1": [
+                {
+                    "difficulty": 1,
+                    "modifier": {
+                        "cost": 1586,
+                        "detractedValueRange": {
+                            "min": 2500,
+                            "max": 4000
+                        },
+                        "costRange": {
+                            "min": 1000,
+                            "max": 2000
+                        },
+                        "location": "porch",
+                        "locationDisplay": "Porch",
+                        "detractedValue": 3168
+                    },
+                    "description": "Minorly damaged porch"
+                },
+                {
+                    "difficulty": 1,
+                    "modifier": {
+                        "cost": 1108,
+                        "detractedValueRange": {
+                            "min": 2000,
+                            "max": 3000
+                        },
+                        "costRange": {
+                            "min": 900,
+                            "max": 1500
+                        },
+                        "location": "balcony",
+                        "locationDisplay": "Balcony",
+                        "detractedValue": 2673
+                    },
+                    "description": "Minorly damaged balcony"
+                }
+            ],
+            "2": [],
+            "3": []
+        },
+        "rooms": [
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 61991,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 60480,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 45284,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 41761,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 42812,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 36345,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 30867,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 33951,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 26409,
+                "interior": true
+            },
+            {
+                "displayName": "Kitchen",
+                "damaged": false,
+                "name": "essentialKitchen",
+                "invisible": false,
+                "type": "KITCHEN",
+                "value": 57264,
+                "interior": true
+            },
+            {
+                "displayName": "Living Room",
+                "damaged": false,
+                "name": "essentialLivingRoom",
+                "invisible": false,
+                "type": "LIVING_ROOM",
+                "value": 71116,
+                "interior": true
+            },
+            {
+                "displayName": "Sunroom",
+                "damaged": false,
+                "name": "sunroom",
+                "invisible": false,
+                "type": "NONESSENTIAL",
+                "value": 85186.01454908609,
+                "interior": true
+            }
+        ],
+        "xomeValuationEstimate": 635008.6355675221,
+        "negotiationPrice": 467342.70732284104,
+        "occupancy": false,
+        "medianSoldPrice": 445577,
+        "description": "Lorem descripsum",
+        "areas": [
+            {
+                "displayName": "Front door",
+                "damaged": false,
+                "name": "frontDoor",
+                "invisible": false,
+                "value": 1000,
+                "interior": true
+            },
+            {
+                "displayName": "Back door",
+                "damaged": false,
+                "name": "backDoor",
+                "invisible": false,
+                "value": 1000,
+                "interior": true
+            },
+            {
+                "displayName": "Siding",
+                "damaged": false,
+                "name": "siding",
+                "invisible": false,
+                "value": 10000,
+                "interior": true
+            },
+            {
+                "displayName": "Roof",
+                "damaged": false,
+                "name": "roof",
+                "invisible": false,
+                "value": 20000,
+                "interior": true
+            },
+            {
+                "displayName": "Garage",
+                "damaged": false,
+                "name": "garage",
+                "invisible": false,
+                "value": 25000,
+                "interior": true
+            },
+            {
+                "displayName": "Pool",
+                "damaged": false,
+                "name": "pool",
+                "invisible": false,
+                "value": 40000,
+                "interior": true
+            },
+            {
+                "displayName": "Exterior walls",
+                "damaged": false,
+                "name": "exteriorWalls",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Deck",
+                "damaged": false,
+                "name": "deck",
+                "invisible": false,
+                "value": 9000,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 1,
+                    "chance": 0.2,
+                    "cost": 1586,
+                    "prefix": "Minorly damaged",
+                    "detractedValueRange": {
+                        "min": 2500,
+                        "max": 4000
+                    },
+                    "costRange": {
+                        "min": 1000,
+                        "max": 2000
+                    },
+                    "detractedValue": 3168
+                },
+                "displayName": "Porch",
+                "damaged": true,
+                "name": "porch",
+                "invisible": false,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 1,
+                    "chance": 0.2,
+                    "cost": 1108,
+                    "prefix": "Minorly damaged",
+                    "detractedValueRange": {
+                        "min": 2000,
+                        "max": 3000
+                    },
+                    "costRange": {
+                        "min": 900,
+                        "max": 1500
+                    },
+                    "detractedValue": 2673
+                },
+                "displayName": "Balcony",
+                "damaged": true,
+                "name": "balcony",
+                "invisible": false,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Front yard",
+                "damaged": false,
+                "name": "frontYard",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Backyard",
+                "damaged": false,
+                "name": "backYard",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Foundation",
+                "damaged": false,
+                "name": "foundation",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Interior walls",
+                "damaged": false,
+                "name": "interiorWalls",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Lighting",
+                "damaged": false,
+                "name": "lighting",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Structural integrity",
+                "damaged": false,
+                "name": "structuralIntegrity",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Flooring",
+                "damaged": false,
+                "name": "flooring",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Plumbing",
+                "damaged": false,
+                "name": "plumbing",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Electrical system",
+                "damaged": false,
+                "name": "electricalSystem",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            }
+        ],
+        "walkScore": 65.35035891466728,
+        "streetName": "617 Sherwood Place",
+        "bikeScore": 74.27215122691736,
+        "propertyType": "SINGLE",
+        "imageURL": "",
+        "artificialBidders": [
+            {
+                "maxBid": 662749.2743511582,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 672579.6162579362,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 685045.9065211302,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 649823.3659480528,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 570411.9106990386,
+                "name": "Auctioneer"
+            }
+        ],
+        "comps": [
+            {
+                "streetName": "1239 Liberty Way",
+                "squareFootage": 3710,
+                "district": "Master Meadows",
+                "value": 754111,
+                "numberOfBedrooms": 4,
+                "numberOfBathrooms": 5
+            },
+            {
+                "streetName": "462 Front Avenue",
+                "squareFootage": 4429,
+                "district": "Master Meadows",
+                "value": 753701,
+                "numberOfBedrooms": 4,
+                "numberOfBathrooms": 5
+            },
+            {
+                "streetName": "1058 Royal Grove",
+                "squareFootage": 4808,
+                "district": "Master Meadows",
+                "value": 828575,
+                "numberOfBedrooms": 5,
+                "numberOfBathrooms": 5
+            },
+            {
+                "streetName": "573 Maple Way",
+                "squareFootage": 3553,
+                "district": "Master Meadows",
+                "value": 637798,
+                "numberOfBedrooms": 3,
+                "numberOfBathrooms": 5
+            },
+            {
+                "streetName": "2434 Pearl Avenue",
+                "squareFootage": 5591,
+                "district": "Master Meadows",
+                "value": 879146,
+                "numberOfBedrooms": 5,
+                "numberOfBathrooms": 5
+            },
+            {
+                "streetName": "2739 Hillcrest Grove",
+                "squareFootage": 3827,
+                "district": "Master Meadows",
+                "value": 724723,
+                "numberOfBedrooms": 4,
+                "numberOfBathrooms": 5
+            }
+        ],
+        "stories": 2,
+        "districtName": "Master Meadows",
+        "xomeValuationConfidence": 0.8555452270874343,
+        "buildingSize": 4280,
+        "transitScore": 45.986836626797896,
+        "lotSize": 0,
+        "generatedValue": 583458,
+        "titles": null,
+        "daysOnMarket": 47.31693915466412,
+        "assetType": "SHORT",
+        "openingBid": 383004,
+        "leaderboard": {},
+        "districtId": "YPYljQw3MdqSqMGNpBA0",
+        "schools": [],
+        "medianListPrice": 593785,
+        "researchOptions": {
+            "0": {
+                "cost": 0,
+                "level": 1,
+                "name": "Visit Property",
+                "description": "Visit the property to see if you can gather any information yourself or by asking neighbors."
+            },
+            "1": {
+                "cost": 0,
+                "level": 2,
+                "name": "Douglas-Williams Real Estate Specialists",
+                "description": "A local mom & pop real estate agency. Will find out most details about a property."
+            },
+            "2": {
+                "cost": 0,
+                "level": 3,
+                "name": "Veritas Real Estate Group",
+                "description": "A larger real estate agency group. Takes higher commission for absolute certainty in information gathering."
+            }
+        },
+        "expectedValue": 713882,
+        "propertyTax": 1.56,
+        "minimumSellValue": 639429.1202434654,
+        "age": 79,
+        "id": "EXjWtnLIsxxTZoN0HP6B"
+    },
+    {
+        "amenities": [
+            {
+                "chance": 0.29,
+                "multiplier": 1.03,
+                "impact": 1.03,
+                "name": "Shopping Center",
+                "distanceFrom": 0.86
+            },
+            {
+                "chance": 0.34,
+                "multiplier": 1.04,
+                "impact": 1.03,
+                "name": "Supermarket",
+                "distanceFrom": 0.78
+            },
+            {
+                "chance": 0.44,
+                "multiplier": 1.09,
+                "impact": 1.06,
+                "name": "Recreational Center",
+                "distanceFrom": 0.71
+            }
+        ],
+        "researchables": {
+            "0": [],
+            "1": [],
+            "2": [
+                {
+                    "difficulty": 2,
+                    "modifier": {
+                        "cost": 414,
+                        "detractedValueRange": {
+                            "min": 750,
+                            "max": 1000
+                        },
+                        "costRange": {
+                            "min": 150,
+                            "max": 500
+                        },
+                        "location": "lighting",
+                        "locationDisplay": "Lighting",
+                        "detractedValue": 817
+                    },
+                    "description": "Faulty lighting"
+                },
+                {
+                    "difficulty": 2,
+                    "modifier": {
+                        "cost": 3453,
+                        "detractedValueRange": {
+                            "min": 6000,
+                            "max": 10000
+                        },
+                        "costRange": {
+                            "min": 1500,
+                            "max": 4000
+                        },
+                        "location": "flooring",
+                        "locationDisplay": "Flooring",
+                        "detractedValue": 8898
+                    },
+                    "description": "Moldy flooring"
+                },
+                {
+                    "difficulty": 2,
+                    "modifier": {
+                        "cost": 982,
+                        "detractedValueRange": {
+                            "min": 4000,
+                            "max": 7500
+                        },
+                        "costRange": {
+                            "min": 100,
+                            "max": 1000
+                        },
+                        "location": "plumbing",
+                        "locationDisplay": "Plumbing",
+                        "detractedValue": 5956
+                    },
+                    "description": "Damaged plumbing pipes"
+                }
+            ],
+            "3": []
+        },
+        "rooms": [
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 85157,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 61679,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 38137,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 37154,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 37885,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 57713,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 50530,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 46133,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 30707,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 33178,
+                "interior": true
+            },
+            {
+                "displayName": "Kitchen",
+                "damaged": false,
+                "name": "essentialKitchen",
+                "invisible": false,
+                "type": "KITCHEN",
+                "value": 65593,
+                "interior": true
+            },
+            {
+                "displayName": "Living Room",
+                "damaged": false,
+                "name": "essentialLivingRoom",
+                "invisible": false,
+                "type": "LIVING_ROOM",
+                "value": 69635,
+                "interior": true
+            },
+            {
+                "displayName": "Foyer",
+                "damaged": false,
+                "name": "foyer",
+                "invisible": false,
+                "type": "NONESSENTIAL",
+                "value": 71065.88979500043,
+                "interior": true
+            },
+            {
+                "displayName": "Laundry Room",
+                "damaged": false,
+                "name": "laundryRoom",
+                "invisible": false,
+                "type": "NONESSENTIAL",
+                "value": 70388.16190057708,
+                "interior": true
+            }
+        ],
+        "xomeValuationEstimate": 807801.9053142681,
+        "negotiationPrice": 588884.5105692928,
+        "occupancy": false,
+        "medianSoldPrice": 573046,
+        "description": "Lorem descripsum",
+        "areas": [
+            {
+                "displayName": "Front door",
+                "damaged": false,
+                "name": "frontDoor",
+                "invisible": false,
+                "value": 1000,
+                "interior": true
+            },
+            {
+                "displayName": "Back door",
+                "damaged": false,
+                "name": "backDoor",
+                "invisible": false,
+                "value": 1000,
+                "interior": true
+            },
+            {
+                "displayName": "Siding",
+                "damaged": false,
+                "name": "siding",
+                "invisible": false,
+                "value": 10000,
+                "interior": true
+            },
+            {
+                "displayName": "Roof",
+                "damaged": false,
+                "name": "roof",
+                "invisible": false,
+                "value": 20000,
+                "interior": true
+            },
+            {
+                "displayName": "Garage",
+                "damaged": false,
+                "name": "garage",
+                "invisible": false,
+                "value": 25000,
+                "interior": true
+            },
+            {
+                "displayName": "Pool",
+                "damaged": false,
+                "name": "pool",
+                "invisible": false,
+                "value": 40000,
+                "interior": true
+            },
+            {
+                "displayName": "Exterior walls",
+                "damaged": false,
+                "name": "exteriorWalls",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Deck",
+                "damaged": false,
+                "name": "deck",
+                "invisible": false,
+                "value": 9000,
+                "interior": true
+            },
+            {
+                "displayName": "Porch",
+                "damaged": false,
+                "name": "porch",
+                "invisible": false,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Balcony",
+                "damaged": false,
+                "name": "balcony",
+                "invisible": false,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Front yard",
+                "damaged": false,
+                "name": "frontYard",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Backyard",
+                "damaged": false,
+                "name": "backYard",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Foundation",
+                "damaged": false,
+                "name": "foundation",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Interior walls",
+                "damaged": false,
+                "name": "interiorWalls",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 2,
+                    "chance": 0.2,
+                    "cost": 414,
+                    "prefix": "Faulty",
+                    "detractedValueRange": {
+                        "min": 750,
+                        "max": 1000
+                    },
+                    "costRange": {
+                        "min": 150,
+                        "max": 500
+                    },
+                    "detractedValue": 817
+                },
+                "displayName": "Lighting",
+                "damaged": true,
+                "name": "lighting",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Structural integrity",
+                "damaged": false,
+                "name": "structuralIntegrity",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 2,
+                    "chance": 0.07,
+                    "cost": 3453,
+                    "prefix": "Moldy",
+                    "detractedValueRange": {
+                        "min": 6000,
+                        "max": 10000
+                    },
+                    "costRange": {
+                        "min": 1500,
+                        "max": 4000
+                    },
+                    "detractedValue": 8898
+                },
+                "displayName": "Flooring",
+                "damaged": true,
+                "name": "flooring",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 2,
+                    "chance": 0.2,
+                    "cost": 982,
+                    "prefix": "Damaged",
+                    "detractedValueRange": {
+                        "min": 4000,
+                        "max": 7500
+                    },
+                    "costRange": {
+                        "min": 100,
+                        "max": 1000
+                    },
+                    "suffix": "pipes",
+                    "detractedValue": 5956
+                },
+                "displayName": "Plumbing",
+                "damaged": true,
+                "name": "plumbing",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Electrical system",
+                "damaged": false,
+                "name": "electricalSystem",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            }
+        ],
+        "walkScore": 63.112720570516856,
+        "streetName": "1244 Dogwood Avenue",
+        "bikeScore": 82.90327980697101,
+        "propertyType": "SINGLE",
+        "imageURL": "",
+        "artificialBidders": [
+            {
+                "maxBid": 869709.0094824354,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 817111.0499551855,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 708178.0878579231,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 861305.4586620246,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 693703.4915831945,
+                "name": "Auctioneer"
+            }
+        ],
+        "comps": [
+            {
+                "streetName": "2624 Mill Rise",
+                "squareFootage": 3359,
+                "district": "Master Meadows",
+                "value": 782123,
+                "numberOfBedrooms": 4,
+                "numberOfBathrooms": 5
+            },
+            {
+                "streetName": "1100 Pearl Mews",
+                "squareFootage": 4733,
+                "district": "Master Meadows",
+                "value": 924375,
+                "numberOfBedrooms": 5,
+                "numberOfBathrooms": 5
+            },
+            {
+                "streetName": "1611 Maple End",
+                "squareFootage": 4467,
+                "district": "Master Meadows",
+                "value": 891240,
+                "numberOfBedrooms": 5,
+                "numberOfBathrooms": 5
+            },
+            {
+                "streetName": "1302 Hemlock Avenue",
+                "squareFootage": 4678,
+                "district": "Master Meadows",
+                "value": 930034,
+                "numberOfBedrooms": 5,
+                "numberOfBathrooms": 5
+            },
+            {
+                "streetName": "1869 Poplar Dene",
+                "squareFootage": 4483,
+                "district": "Master Meadows",
+                "value": 921740,
+                "numberOfBedrooms": 5,
+                "numberOfBathrooms": 5
+            }
+        ],
+        "stories": 2,
+        "districtName": "Master Meadows",
+        "xomeValuationConfidence": 0.8564482636649404,
+        "buildingSize": 4205,
+        "transitScore": 45.320054264828016,
+        "lotSize": 0,
+        "generatedValue": 718708,
+        "titles": null,
+        "daysOnMarket": 37.861348829880285,
+        "assetType": "NON_BANK",
+        "openingBid": 463778,
+        "leaderboard": {},
+        "districtId": "YPYljQw3MdqSqMGNpBA0",
+        "schools": [],
+        "medianListPrice": 724163,
+        "researchOptions": {
+            "0": {
+                "cost": 0,
+                "level": 1,
+                "name": "Visit Property",
+                "description": "Visit the property to see if you can gather any information yourself or by asking neighbors."
+            },
+            "1": {
+                "cost": 0,
+                "level": 2,
+                "name": "Douglas-Williams Real Estate Specialists",
+                "description": "A local mom & pop real estate agency. Will find out most details about a property."
+            },
+            "2": {
+                "cost": 0,
+                "level": 3,
+                "name": "Veritas Real Estate Group",
+                "description": "A larger real estate agency group. Takes higher commission for absolute certainty in information gathering."
+            }
+        },
+        "expectedValue": 889560,
+        "propertyTax": 1.47,
+        "minimumSellValue": 805156.3443300298,
+        "age": 89,
+        "id": "pAZmN4fVInm9kKItfQ76"
+    },
+    {
+        "amenities": [
+            {
+                "chance": 0.34,
+                "multiplier": 1.04,
+                "impact": 1.03,
+                "name": "Supermarket",
+                "distanceFrom": 0.75
+            },
+            {
+                "chance": 0.44,
+                "multiplier": 1.09,
+                "impact": 1.08,
+                "name": "Recreational Center",
+                "distanceFrom": 0.85
+            }
+        ],
+        "researchables": {
+            "0": [],
+            "1": [
+                {
+                    "difficulty": 1,
+                    "modifier": {
+                        "cost": 1196,
+                        "detractedValueRange": {
+                            "min": 2000,
+                            "max": 3000
+                        },
+                        "costRange": {
+                            "min": 900,
+                            "max": 1500
+                        },
+                        "location": "balcony",
+                        "locationDisplay": "Balcony",
+                        "detractedValue": 2630
+                    },
+                    "description": "Minorly damaged balcony"
+                }
+            ],
+            "2": [
+                {
+                    "difficulty": 2,
+                    "modifier": {
+                        "cost": 7846,
+                        "detractedValueRange": {
+                            "min": 7000,
+                            "max": 10000
+                        },
+                        "costRange": {
+                            "min": 5500,
+                            "max": 8000
+                        },
+                        "location": "essentialBedroom",
+                        "locationDisplay": "Bedroom",
+                        "detractedValue": 7908
+                    },
+                    "description": "Completely Ruined bedroom"
+                },
+                {
+                    "difficulty": 2,
+                    "modifier": {
+                        "cost": 664,
+                        "detractedValueRange": {
+                            "min": 1250,
+                            "max": 2000
+                        },
+                        "costRange": {
+                            "min": 500,
+                            "max": 1000
+                        },
+                        "location": "interiorWalls",
+                        "locationDisplay": "Interior walls",
+                        "detractedValue": 1508
+                    },
+                    "description": "Minorly damaged interior walls"
+                },
+                {
+                    "difficulty": 2,
+                    "modifier": {
+                        "cost": 243,
+                        "detractedValueRange": {
+                            "min": 750,
+                            "max": 1000
+                        },
+                        "costRange": {
+                            "min": 150,
+                            "max": 500
+                        },
+                        "location": "lighting",
+                        "locationDisplay": "Lighting",
+                        "detractedValue": 848
+                    },
+                    "description": "Faulty lighting"
+                }
+            ],
+            "3": []
+        },
+        "rooms": [
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 90698,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 73528,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 2,
+                    "chance": 0.05,
+                    "cost": 7846,
+                    "prefix": "Completely Ruined",
+                    "detractedValueRange": {
+                        "min": 7000,
+                        "max": 10000
+                    },
+                    "costRange": {
+                        "min": 5500,
+                        "max": 8000
+                    },
+                    "detractedValue": 7908
+                },
+                "displayName": "Bedroom",
+                "damaged": true,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 71089,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 68215,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 57746,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 52623,
+                "interior": true
+            },
+            {
+                "displayName": "Kitchen",
+                "damaged": false,
+                "name": "essentialKitchen",
+                "invisible": false,
+                "type": "KITCHEN",
+                "value": 66932,
+                "interior": true
+            },
+            {
+                "displayName": "Living Room",
+                "damaged": false,
+                "name": "essentialLivingRoom",
+                "invisible": false,
+                "type": "LIVING_ROOM",
+                "value": 76155,
+                "interior": true
+            },
+            {
+                "displayName": "Laundry Room",
+                "damaged": false,
+                "name": "laundryRoom",
+                "invisible": false,
+                "type": "NONESSENTIAL",
+                "value": 81629.53610571455,
+                "interior": true
+            },
+            {
+                "displayName": "Foyer",
+                "damaged": false,
+                "name": "foyer",
+                "invisible": false,
+                "type": "NONESSENTIAL",
+                "value": 69551.34984239854,
+                "interior": true
+            }
+        ],
+        "xomeValuationEstimate": 757738.567964481,
+        "negotiationPrice": 543729.1949895422,
+        "occupancy": false,
+        "medianSoldPrice": 508731,
+        "description": "Lorem descripsum",
+        "areas": [
+            {
+                "displayName": "Front door",
+                "damaged": false,
+                "name": "frontDoor",
+                "invisible": false,
+                "value": 1000,
+                "interior": true
+            },
+            {
+                "displayName": "Back door",
+                "damaged": false,
+                "name": "backDoor",
+                "invisible": false,
+                "value": 1000,
+                "interior": true
+            },
+            {
+                "displayName": "Siding",
+                "damaged": false,
+                "name": "siding",
+                "invisible": false,
+                "value": 10000,
+                "interior": true
+            },
+            {
+                "displayName": "Roof",
+                "damaged": false,
+                "name": "roof",
+                "invisible": false,
+                "value": 20000,
+                "interior": true
+            },
+            {
+                "displayName": "Garage",
+                "damaged": false,
+                "name": "garage",
+                "invisible": false,
+                "value": 25000,
+                "interior": true
+            },
+            {
+                "displayName": "Pool",
+                "damaged": false,
+                "name": "pool",
+                "invisible": false,
+                "value": 40000,
+                "interior": true
+            },
+            {
+                "displayName": "Exterior walls",
+                "damaged": false,
+                "name": "exteriorWalls",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Deck",
+                "damaged": false,
+                "name": "deck",
+                "invisible": false,
+                "value": 9000,
+                "interior": true
+            },
+            {
+                "displayName": "Porch",
+                "damaged": false,
+                "name": "porch",
+                "invisible": false,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 1,
+                    "chance": 0.2,
+                    "cost": 1196,
+                    "prefix": "Minorly damaged",
+                    "detractedValueRange": {
+                        "min": 2000,
+                        "max": 3000
+                    },
+                    "costRange": {
+                        "min": 900,
+                        "max": 1500
+                    },
+                    "detractedValue": 2630
+                },
+                "displayName": "Balcony",
+                "damaged": true,
+                "name": "balcony",
+                "invisible": false,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Front yard",
+                "damaged": false,
+                "name": "frontYard",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Backyard",
+                "damaged": false,
+                "name": "backYard",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Foundation",
+                "damaged": false,
+                "name": "foundation",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 2,
+                    "chance": 0.4,
+                    "cost": 664,
+                    "prefix": "Minorly damaged",
+                    "detractedValueRange": {
+                        "min": 1250,
+                        "max": 2000
+                    },
+                    "costRange": {
+                        "min": 500,
+                        "max": 1000
+                    },
+                    "detractedValue": 1508
+                },
+                "displayName": "Interior walls",
+                "damaged": true,
+                "name": "interiorWalls",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 2,
+                    "chance": 0.2,
+                    "cost": 243,
+                    "prefix": "Faulty",
+                    "detractedValueRange": {
+                        "min": 750,
+                        "max": 1000
+                    },
+                    "costRange": {
+                        "min": 150,
+                        "max": 500
+                    },
+                    "detractedValue": 848
+                },
+                "displayName": "Lighting",
+                "damaged": true,
+                "name": "lighting",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Structural integrity",
+                "damaged": false,
+                "name": "structuralIntegrity",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Flooring",
+                "damaged": false,
+                "name": "flooring",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Plumbing",
+                "damaged": false,
+                "name": "plumbing",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Electrical system",
+                "damaged": false,
+                "name": "electricalSystem",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            }
+        ],
+        "walkScore": 62.006099948214995,
+        "streetName": "1422 Highland Lane",
+        "bikeScore": 79.97209533700357,
+        "propertyType": "SINGLE",
+        "imageURL": "",
+        "artificialBidders": [
+            {
+                "maxBid": 822732.5663790582,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 803619.7801164271,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 700104.4876795375,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 652675.8082045483,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 700797.75200844,
+                "name": "Auctioneer"
+            }
+        ],
+        "comps": [
+            {
+                "streetName": "1220 Walnut Lane",
+                "squareFootage": 3111,
+                "district": "Master Meadows",
+                "value": 723176,
+                "numberOfBedrooms": 3,
+                "numberOfBathrooms": 2
+            },
+            {
+                "streetName": "1863 Academy Court",
+                "squareFootage": 4090,
+                "district": "Master Meadows",
+                "value": 818808,
+                "numberOfBedrooms": 3,
+                "numberOfBathrooms": 3
+            },
+            {
+                "streetName": "605 Academy Hill",
+                "squareFootage": 4385,
+                "district": "Master Meadows",
+                "value": 829427,
+                "numberOfBedrooms": 3,
+                "numberOfBathrooms": 3
+            },
+            {
+                "streetName": "466 Magnolia Way",
+                "squareFootage": 3778,
+                "district": "Master Meadows",
+                "value": 769901,
+                "numberOfBedrooms": 3,
+                "numberOfBathrooms": 2
+            },
+            {
+                "streetName": "467 Laurel Street",
+                "squareFootage": 4438,
+                "district": "Master Meadows",
+                "value": 790739,
+                "numberOfBedrooms": 3,
+                "numberOfBathrooms": 3
+            }
+        ],
+        "stories": 2,
+        "districtName": "Master Meadows",
+        "xomeValuationConfidence": 0.9030566493571893,
+        "buildingSize": 3916,
+        "transitScore": 41.2783863535985,
+        "lotSize": 0,
+        "generatedValue": 674884,
+        "titles": null,
+        "daysOnMarket": 54.27855574506126,
+        "assetType": "TRUSTEE",
+        "openingBid": 455406,
+        "leaderboard": {},
+        "districtId": "YPYljQw3MdqSqMGNpBA0",
+        "schools": [
+            {
+                "chance": 0.4,
+                "multiplier": 1.03,
+                "impact": 1.02,
+                "name": "Garfield Elementary School",
+                "schoolProperties": {
+                    "public": true,
+                    "rating": 4,
+                    "grades": {
+                        "min": 0,
+                        "max": 4
+                    }
+                },
+                "distanceFrom": 0.74
+            }
+        ],
+        "medianListPrice": 664544,
+        "researchOptions": {
+            "0": {
+                "cost": 0,
+                "level": 1,
+                "name": "Visit Property",
+                "description": "Visit the property to see if you can gather any information yourself or by asking neighbors."
+            },
+            "1": {
+                "cost": 0,
+                "level": 2,
+                "name": "Douglas-Williams Real Estate Specialists",
+                "description": "A local mom & pop real estate agency. Will find out most details about a property."
+            },
+            "2": {
+                "cost": 0,
+                "level": 3,
+                "name": "Veritas Real Estate Group",
+                "description": "A larger real estate agency group. Takes higher commission for absolute certainty in information gathering."
+            }
+        },
+        "expectedValue": 827561,
+        "propertyTax": 1.5,
+        "minimumSellValue": 737976.7170085988,
+        "age": 93,
+        "id": "WTVUQFEu5kLtnMd5od1Q"
+    },
+    {
+        "amenities": [
+            {
+                "chance": 0.19,
+                "multiplier": 1.07,
+                "impact": 1.05,
+                "name": "Trail",
+                "distanceFrom": 0.76
+            }
+        ],
+        "researchables": {
+            "0": [
+                {
+                    "difficulty": 0,
+                    "modifier": {
+                        "cost": 294,
+                        "detractedValueRange": {
+                            "min": 400,
+                            "max": 900
+                        },
+                        "costRange": {
+                            "min": 50,
+                            "max": 300
+                        },
+                        "location": "frontYard",
+                        "locationDisplay": "Front yard",
+                        "detractedValue": 840
+                    },
+                    "description": "Unkempt front yard"
+                }
+            ],
+            "1": [
+                {
+                    "difficulty": 1,
+                    "modifier": {
+                        "cost": 1378,
+                        "detractedValueRange": {
+                            "min": 2500,
+                            "max": 4000
+                        },
+                        "costRange": {
+                            "min": 1000,
+                            "max": 2000
+                        },
+                        "location": "porch",
+                        "locationDisplay": "Porch",
+                        "detractedValue": 3920
+                    },
+                    "description": "Minorly damaged porch"
+                }
+            ],
+            "2": [
+                {
+                    "difficulty": 2,
+                    "modifier": {
+                        "cost": 5871,
+                        "detractedValueRange": {
+                            "min": 7000,
+                            "max": 10000
+                        },
+                        "costRange": {
+                            "min": 5500,
+                            "max": 8000
+                        },
+                        "location": "study",
+                        "locationDisplay": "Study",
+                        "detractedValue": 7393
+                    },
+                    "description": "Completely Ruined study"
+                }
+            ],
+            "3": []
+        },
+        "rooms": [
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 82726,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 66711,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 66581,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 56764,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 53381,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 54287,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 41292,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 28008,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 28606,
+                "interior": true
+            },
+            {
+                "displayName": "Kitchen",
+                "damaged": false,
+                "name": "essentialKitchen",
+                "invisible": false,
+                "type": "KITCHEN",
+                "value": 72194,
+                "interior": true
+            },
+            {
+                "displayName": "Living Room",
+                "damaged": false,
+                "name": "essentialLivingRoom",
+                "invisible": false,
+                "type": "LIVING_ROOM",
+                "value": 81530,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 2,
+                    "chance": 0.05,
+                    "cost": 5871,
+                    "prefix": "Completely Ruined",
+                    "detractedValueRange": {
+                        "min": 7000,
+                        "max": 10000
+                    },
+                    "costRange": {
+                        "min": 5500,
+                        "max": 8000
+                    },
+                    "detractedValue": 7393
+                },
+                "displayName": "Study",
+                "damaged": true,
+                "name": "study",
+                "invisible": false,
+                "type": "NONESSENTIAL",
+                "value": 81427.08091256341,
+                "interior": true
+            },
+            {
+                "displayName": "Laundry Room",
+                "damaged": false,
+                "name": "laundryRoom",
+                "invisible": false,
+                "type": "NONESSENTIAL",
+                "value": 71264.77184963401,
+                "interior": true
+            }
+        ],
+        "xomeValuationEstimate": 839705.8824555513,
+        "negotiationPrice": 575958.5409485165,
+        "occupancy": false,
+        "medianSoldPrice": 565329,
+        "description": "Lorem descripsum",
+        "areas": [
+            {
+                "displayName": "Front door",
+                "damaged": false,
+                "name": "frontDoor",
+                "invisible": false,
+                "value": 1000,
+                "interior": true
+            },
+            {
+                "displayName": "Back door",
+                "damaged": false,
+                "name": "backDoor",
+                "invisible": false,
+                "value": 1000,
+                "interior": true
+            },
+            {
+                "displayName": "Siding",
+                "damaged": false,
+                "name": "siding",
+                "invisible": false,
+                "value": 10000,
+                "interior": true
+            },
+            {
+                "displayName": "Roof",
+                "damaged": false,
+                "name": "roof",
+                "invisible": false,
+                "value": 20000,
+                "interior": true
+            },
+            {
+                "displayName": "Garage",
+                "damaged": false,
+                "name": "garage",
+                "invisible": false,
+                "value": 25000,
+                "interior": true
+            },
+            {
+                "displayName": "Pool",
+                "damaged": false,
+                "name": "pool",
+                "invisible": false,
+                "value": 40000,
+                "interior": true
+            },
+            {
+                "displayName": "Exterior walls",
+                "damaged": false,
+                "name": "exteriorWalls",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Deck",
+                "damaged": false,
+                "name": "deck",
+                "invisible": false,
+                "value": 9000,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 1,
+                    "chance": 0.2,
+                    "cost": 1378,
+                    "prefix": "Minorly damaged",
+                    "detractedValueRange": {
+                        "min": 2500,
+                        "max": 4000
+                    },
+                    "costRange": {
+                        "min": 1000,
+                        "max": 2000
+                    },
+                    "detractedValue": 3920
+                },
+                "displayName": "Porch",
+                "damaged": true,
+                "name": "porch",
+                "invisible": false,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Balcony",
+                "damaged": false,
+                "name": "balcony",
+                "invisible": false,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 0,
+                    "chance": 0.2,
+                    "cost": 294,
+                    "prefix": "Unkempt",
+                    "detractedValueRange": {
+                        "min": 400,
+                        "max": 900
+                    },
+                    "costRange": {
+                        "min": 50,
+                        "max": 300
+                    },
+                    "detractedValue": 840
+                },
+                "displayName": "Front yard",
+                "damaged": true,
+                "name": "frontYard",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Backyard",
+                "damaged": false,
+                "name": "backYard",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Foundation",
+                "damaged": false,
+                "name": "foundation",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Interior walls",
+                "damaged": false,
+                "name": "interiorWalls",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Lighting",
+                "damaged": false,
+                "name": "lighting",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Structural integrity",
+                "damaged": false,
+                "name": "structuralIntegrity",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Flooring",
+                "damaged": false,
+                "name": "flooring",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Plumbing",
+                "damaged": false,
+                "name": "plumbing",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Electrical system",
+                "damaged": false,
+                "name": "electricalSystem",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            }
+        ],
+        "walkScore": 62.911198912330455,
+        "streetName": "1106 Park Road",
+        "bikeScore": 77.61604181237229,
+        "propertyType": "SINGLE",
+        "imageURL": "",
+        "artificialBidders": [
+            {
+                "maxBid": 731584.1508462628,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 797965.0714617445,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 788343.7251934452,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 705827.0261928223,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 684841.3809111189,
+                "name": "Auctioneer"
+            }
+        ],
+        "comps": [
+            {
+                "streetName": "2969 Academy Court",
+                "squareFootage": 4457,
+                "district": "Master Meadows",
+                "value": 999226,
+                "numberOfBedrooms": 5,
+                "numberOfBathrooms": 5
+            },
+            {
+                "streetName": "1006 Fulton Row",
+                "squareFootage": 4163,
+                "district": "Master Meadows",
+                "value": 827007,
+                "numberOfBedrooms": 4,
+                "numberOfBathrooms": 5
+            },
+            {
+                "streetName": "2824 Grand Place",
+                "squareFootage": 3424,
+                "district": "Master Meadows",
+                "value": 931961,
+                "numberOfBedrooms": 4,
+                "numberOfBathrooms": 5
+            },
+            {
+                "streetName": "3017 Hillcrest Gardens",
+                "squareFootage": 4279,
+                "district": "Master Meadows",
+                "value": 806097,
+                "numberOfBedrooms": 4,
+                "numberOfBathrooms": 5
+            }
+        ],
+        "stories": 2,
+        "districtName": "Master Meadows",
+        "xomeValuationConfidence": 0.8828060206160393,
+        "buildingSize": 3904,
+        "transitScore": 44.41607779010604,
+        "lotSize": 0,
+        "generatedValue": 751345,
+        "titles": null,
+        "daysOnMarket": 51.16723646397428,
+        "assetType": "TRUSTEE",
+        "openingBid": 439801,
+        "leaderboard": {},
+        "districtId": "YPYljQw3MdqSqMGNpBA0",
+        "schools": [],
+        "medianListPrice": 734483,
+        "researchOptions": {
+            "0": {
+                "cost": 0,
+                "level": 1,
+                "name": "Visit Property",
+                "description": "Visit the property to see if you can gather any information yourself or by asking neighbors."
+            },
+            "1": {
+                "cost": 0,
+                "level": 2,
+                "name": "Douglas-Williams Real Estate Specialists",
+                "description": "A local mom & pop real estate agency. Will find out most details about a property."
+            },
+            "2": {
+                "cost": 0,
+                "level": 3,
+                "name": "Veritas Real Estate Group",
+                "description": "A larger real estate agency group. Takes higher commission for absolute certainty in information gathering."
+            }
+        },
+        "expectedValue": 868037,
+        "propertyTax": 1.56,
+        "minimumSellValue": 778222.2275100918,
+        "age": 72,
+        "id": "ltGg7iHZ77MeZ6wWpUo6"
+    },
+    {
+        "amenities": [],
+        "researchables": {
+            "0": [],
+            "1": [
+                {
+                    "difficulty": 1,
+                    "modifier": {
+                        "cost": 1415,
+                        "detractedValueRange": {
+                            "min": 2000,
+                            "max": 3000
+                        },
+                        "costRange": {
+                            "min": 900,
+                            "max": 1500
+                        },
+                        "location": "deck",
+                        "locationDisplay": "Deck",
+                        "detractedValue": 2033
+                    },
+                    "description": "Minorly damaged deck"
+                }
+            ],
+            "2": [],
+            "3": []
+        },
+        "rooms": [
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 96343,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 73288,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 60853,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 54913,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 53360,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 35315,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 36858,
+                "interior": true
+            },
+            {
+                "displayName": "Kitchen",
+                "damaged": false,
+                "name": "essentialKitchen",
+                "invisible": false,
+                "type": "KITCHEN",
+                "value": 51726,
+                "interior": true
+            },
+            {
+                "displayName": "Living Room",
+                "damaged": false,
+                "name": "essentialLivingRoom",
+                "invisible": false,
+                "type": "LIVING_ROOM",
+                "value": 63179,
+                "interior": true
+            },
+            {
+                "displayName": "Library",
+                "damaged": false,
+                "name": "library",
+                "invisible": false,
+                "type": "NONESSENTIAL",
+                "value": 74035.97954123655,
+                "interior": true
+            }
+        ],
+        "xomeValuationEstimate": 641861.9481091232,
+        "negotiationPrice": 421168.64015882974,
+        "occupancy": false,
+        "medianSoldPrice": 449880,
+        "description": "Lorem descripsum",
+        "areas": [
+            {
+                "displayName": "Front door",
+                "damaged": false,
+                "name": "frontDoor",
+                "invisible": false,
+                "value": 1000,
+                "interior": true
+            },
+            {
+                "displayName": "Back door",
+                "damaged": false,
+                "name": "backDoor",
+                "invisible": false,
+                "value": 1000,
+                "interior": true
+            },
+            {
+                "displayName": "Siding",
+                "damaged": false,
+                "name": "siding",
+                "invisible": false,
+                "value": 10000,
+                "interior": true
+            },
+            {
+                "displayName": "Roof",
+                "damaged": false,
+                "name": "roof",
+                "invisible": false,
+                "value": 20000,
+                "interior": true
+            },
+            {
+                "displayName": "Garage",
+                "damaged": false,
+                "name": "garage",
+                "invisible": false,
+                "value": 25000,
+                "interior": true
+            },
+            {
+                "displayName": "Pool",
+                "damaged": false,
+                "name": "pool",
+                "invisible": false,
+                "value": 40000,
+                "interior": true
+            },
+            {
+                "displayName": "Exterior walls",
+                "damaged": false,
+                "name": "exteriorWalls",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 1,
+                    "chance": 0.2,
+                    "cost": 1415,
+                    "prefix": "Minorly damaged",
+                    "detractedValueRange": {
+                        "min": 2000,
+                        "max": 3000
+                    },
+                    "costRange": {
+                        "min": 900,
+                        "max": 1500
+                    },
+                    "detractedValue": 2033
+                },
+                "displayName": "Deck",
+                "damaged": true,
+                "name": "deck",
+                "invisible": false,
+                "value": 9000,
+                "interior": true
+            },
+            {
+                "displayName": "Porch",
+                "damaged": false,
+                "name": "porch",
+                "invisible": false,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Balcony",
+                "damaged": false,
+                "name": "balcony",
+                "invisible": false,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Front yard",
+                "damaged": false,
+                "name": "frontYard",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Backyard",
+                "damaged": false,
+                "name": "backYard",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Foundation",
+                "damaged": false,
+                "name": "foundation",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Interior walls",
+                "damaged": false,
+                "name": "interiorWalls",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Lighting",
+                "damaged": false,
+                "name": "lighting",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Structural integrity",
+                "damaged": false,
+                "name": "structuralIntegrity",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Flooring",
+                "damaged": false,
+                "name": "flooring",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Plumbing",
+                "damaged": false,
+                "name": "plumbing",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Electrical system",
+                "damaged": false,
+                "name": "electricalSystem",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            }
+        ],
+        "walkScore": 59.224935098661724,
+        "streetName": "1018 Lake Lane",
+        "bikeScore": 79.15559102817888,
+        "propertyType": "SINGLE",
+        "imageURL": "",
+        "artificialBidders": [
+            {
+                "maxBid": 586847.2185931774,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 538594.0628934515,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 595375.0879789327,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 638413.501250104,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 514687.08149337803,
+                "name": "Auctioneer"
+            }
+        ],
+        "comps": [
+            {
+                "streetName": "1973 Brookside Square",
+                "squareFootage": 3331,
+                "district": "Master Meadows",
+                "value": 593951,
+                "numberOfBedrooms": 3,
+                "numberOfBathrooms": 4
+            },
+            {
+                "streetName": "1153 Cambridge Rise",
+                "squareFootage": 4063,
+                "district": "Master Meadows",
+                "value": 636154,
+                "numberOfBedrooms": 3,
+                "numberOfBathrooms": 4
+            },
+            {
+                "streetName": "3298 Creek Close",
+                "squareFootage": 4310,
+                "district": "Master Meadows",
+                "value": 595491,
+                "numberOfBedrooms": 3,
+                "numberOfBathrooms": 4
+            },
+            {
+                "streetName": "3674 Lakeview Row",
+                "squareFootage": 4225,
+                "district": "Master Meadows",
+                "value": 568969,
+                "numberOfBedrooms": 3,
+                "numberOfBathrooms": 3.5
+            }
+        ],
+        "stories": 2,
+        "districtName": "Master Meadows",
+        "xomeValuationConfidence": 0.8998453548693427,
+        "buildingSize": 3911,
+        "transitScore": 43.56983368274004,
+        "lotSize": 0,
+        "generatedValue": 590293,
+        "titles": null,
+        "daysOnMarket": 54.667260008667206,
+        "assetType": "TRUSTEE",
+        "openingBid": 324987,
+        "leaderboard": {},
+        "districtId": "YPYljQw3MdqSqMGNpBA0",
+        "schools": [],
+        "medianListPrice": 594220,
+        "researchOptions": {
+            "0": {
+                "cost": 0,
+                "level": 1,
+                "name": "Visit Property",
+                "description": "Visit the property to see if you can gather any information yourself or by asking neighbors."
+            },
+            "1": {
+                "cost": 0,
+                "level": 2,
+                "name": "Douglas-Williams Real Estate Specialists",
+                "description": "A local mom & pop real estate agency. Will find out most details about a property."
+            },
+            "2": {
+                "cost": 0,
+                "level": 3,
+                "name": "Veritas Real Estate Group",
+                "description": "A larger real estate agency group. Takes higher commission for absolute certainty in information gathering."
+            }
+        },
+        "expectedValue": 639686,
+        "propertyTax": 1.54,
+        "minimumSellValue": 564296.378875692,
+        "age": 68,
+        "id": "4jag9EHJGTaFe66j45gR"
+    },
+    {
+        "amenities": [
+            {
+                "chance": 0.19,
+                "multiplier": 1.07,
+                "impact": 1.06,
+                "name": "Trail",
+                "distanceFrom": 0.9
+            },
+            {
+                "chance": 0.34,
+                "multiplier": 1.04,
+                "impact": 1.03,
+                "name": "Supermarket",
+                "distanceFrom": 0.75
+            },
+            {
+                "chance": 0.44,
+                "multiplier": 1.09,
+                "impact": 1.07,
+                "name": "Recreational Center",
+                "distanceFrom": 0.78
+            }
+        ],
+        "researchables": {
+            "0": [
+                {
+                    "difficulty": 0,
+                    "modifier": {
+                        "cost": 249,
+                        "detractedValueRange": {
+                            "min": 500,
+                            "max": 1000
+                        },
+                        "costRange": {
+                            "min": 100,
+                            "max": 350
+                        },
+                        "location": "frontDoor",
+                        "locationDisplay": "Front door",
+                        "detractedValue": 581
+                    },
+                    "description": "Damaged front door"
+                },
+                {
+                    "difficulty": 0,
+                    "modifier": {
+                        "cost": 1182,
+                        "detractedValueRange": {
+                            "min": 1500,
+                            "max": 3000
+                        },
+                        "costRange": {
+                            "min": 750,
+                            "max": 1500
+                        },
+                        "location": "roof",
+                        "locationDisplay": "Roof",
+                        "detractedValue": 2238
+                    },
+                    "description": "Minorly damaged roof"
+                },
+                {
+                    "difficulty": 0,
+                    "modifier": {
+                        "cost": 297,
+                        "detractedValueRange": {
+                            "min": 1000,
+                            "max": 2000
+                        },
+                        "costRange": {
+                            "min": 150,
+                            "max": 500
+                        },
+                        "location": "exteriorWalls",
+                        "locationDisplay": "Exterior walls",
+                        "detractedValue": 1439
+                    },
+                    "description": "Vandalized exterior walls"
+                }
+            ],
+            "1": [
+                {
+                    "difficulty": 1,
+                    "modifier": {
+                        "cost": 165,
+                        "detractedValueRange": {
+                            "min": 500,
+                            "max": 1000
+                        },
+                        "costRange": {
+                            "min": 100,
+                            "max": 350
+                        },
+                        "location": "backDoor",
+                        "locationDisplay": "Back door",
+                        "detractedValue": 753
+                    },
+                    "description": "Damaged back door"
+                },
+                {
+                    "difficulty": 1,
+                    "modifier": {
+                        "cost": 1747,
+                        "detractedValueRange": {
+                            "min": 2500,
+                            "max": 4000
+                        },
+                        "costRange": {
+                            "min": 1000,
+                            "max": 2000
+                        },
+                        "location": "porch",
+                        "locationDisplay": "Porch",
+                        "detractedValue": 2854
+                    },
+                    "description": "Minorly damaged porch"
+                },
+                {
+                    "difficulty": 1,
+                    "modifier": {
+                        "cost": 142,
+                        "detractedValueRange": {
+                            "min": 250,
+                            "max": 750
+                        },
+                        "costRange": {
+                            "min": 25,
+                            "max": 200
+                        },
+                        "location": "backYard",
+                        "locationDisplay": "Backyard",
+                        "detractedValue": 290
+                    },
+                    "description": "Messy backyard"
+                }
+            ],
+            "2": [
+                {
+                    "difficulty": 2,
+                    "modifier": {
+                        "cost": 1503,
+                        "detractedValueRange": {
+                            "min": 2000,
+                            "max": 4000
+                        },
+                        "costRange": {
+                            "min": 1000,
+                            "max": 2500
+                        },
+                        "location": "essentialBathroom",
+                        "locationDisplay": "Bathroom",
+                        "detractedValue": 3766
+                    },
+                    "description": "Damaged bathroom"
+                },
+                {
+                    "difficulty": 2,
+                    "modifier": {
+                        "cost": 1740,
+                        "detractedValueRange": {
+                            "min": 3000,
+                            "max": 5000
+                        },
+                        "costRange": {
+                            "min": 1500,
+                            "max": 2500
+                        },
+                        "location": "pool",
+                        "locationDisplay": "Pool",
+                        "detractedValue": 4407
+                    },
+                    "description": "Leaky pool"
+                },
+                {
+                    "difficulty": 2,
+                    "modifier": {
+                        "cost": 445,
+                        "detractedValueRange": {
+                            "min": 750,
+                            "max": 1000
+                        },
+                        "costRange": {
+                            "min": 150,
+                            "max": 500
+                        },
+                        "location": "lighting",
+                        "locationDisplay": "Lighting",
+                        "detractedValue": 904
+                    },
+                    "description": "Faulty lighting"
+                }
+            ],
+            "3": []
+        },
+        "rooms": [
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 84001,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 73053,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 38503,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 46197,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 39136,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 43414,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 2,
+                    "chance": 0.07,
+                    "cost": 1503,
+                    "prefix": "Damaged",
+                    "detractedValueRange": {
+                        "min": 2000,
+                        "max": 4000
+                    },
+                    "costRange": {
+                        "min": 1000,
+                        "max": 2500
+                    },
+                    "detractedValue": 3766
+                },
+                "displayName": "Bathroom",
+                "damaged": true,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 44519,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 33629,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 32872,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 32145,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 31905,
+                "interior": true
+            },
+            {
+                "displayName": "Kitchen",
+                "damaged": false,
+                "name": "essentialKitchen",
+                "invisible": false,
+                "type": "KITCHEN",
+                "value": 80293,
+                "interior": true
+            },
+            {
+                "displayName": "Living Room",
+                "damaged": false,
+                "name": "essentialLivingRoom",
+                "invisible": false,
+                "type": "LIVING_ROOM",
+                "value": 96038,
+                "interior": true
+            },
+            {
+                "displayName": "Nursery",
+                "damaged": false,
+                "name": "nursery",
+                "invisible": false,
+                "type": "NONESSENTIAL",
+                "value": 84335.07259492218,
+                "interior": true
+            },
+            {
+                "displayName": "Recreation Room",
+                "damaged": false,
+                "name": "recreationRoom",
+                "invisible": false,
+                "type": "NONESSENTIAL",
+                "value": 68913.19873870423,
+                "interior": true
+            }
+        ],
+        "xomeValuationEstimate": 886980.0003269803,
+        "negotiationPrice": 665811.6356438756,
+        "occupancy": false,
+        "medianSoldPrice": 600568,
+        "description": "Lorem descripsum",
+        "areas": [
+            {
+                "damage": {
+                    "difficulty": 0,
+                    "chance": 0.08,
+                    "cost": 249,
+                    "prefix": "Damaged",
+                    "detractedValueRange": {
+                        "min": 500,
+                        "max": 1000
+                    },
+                    "costRange": {
+                        "min": 100,
+                        "max": 350
+                    },
+                    "detractedValue": 581
+                },
+                "displayName": "Front door",
+                "damaged": true,
+                "name": "frontDoor",
+                "invisible": false,
+                "value": 1000,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 1,
+                    "chance": 0.08,
+                    "cost": 165,
+                    "prefix": "Damaged",
+                    "detractedValueRange": {
+                        "min": 500,
+                        "max": 1000
+                    },
+                    "costRange": {
+                        "min": 100,
+                        "max": 350
+                    },
+                    "detractedValue": 753
+                },
+                "displayName": "Back door",
+                "damaged": true,
+                "name": "backDoor",
+                "invisible": false,
+                "value": 1000,
+                "interior": true
+            },
+            {
+                "displayName": "Siding",
+                "damaged": false,
+                "name": "siding",
+                "invisible": false,
+                "value": 10000,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 0,
+                    "chance": 0.05,
+                    "cost": 1182,
+                    "prefix": "Minorly damaged",
+                    "detractedValueRange": {
+                        "min": 1500,
+                        "max": 3000
+                    },
+                    "costRange": {
+                        "min": 750,
+                        "max": 1500
+                    },
+                    "detractedValue": 2238
+                },
+                "displayName": "Roof",
+                "damaged": true,
+                "name": "roof",
+                "invisible": false,
+                "value": 20000,
+                "interior": true
+            },
+            {
+                "displayName": "Garage",
+                "damaged": false,
+                "name": "garage",
+                "invisible": false,
+                "value": 25000,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 2,
+                    "chance": 0.07,
+                    "cost": 1740,
+                    "prefix": "Leaky",
+                    "detractedValueRange": {
+                        "min": 3000,
+                        "max": 5000
+                    },
+                    "costRange": {
+                        "min": 1500,
+                        "max": 2500
+                    },
+                    "detractedValue": 4407
+                },
+                "displayName": "Pool",
+                "damaged": true,
+                "name": "pool",
+                "invisible": false,
+                "value": 40000,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 0,
+                    "chance": 0.3,
+                    "cost": 297,
+                    "prefix": "Vandalized",
+                    "detractedValueRange": {
+                        "min": 1000,
+                        "max": 2000
+                    },
+                    "costRange": {
+                        "min": 150,
+                        "max": 500
+                    },
+                    "detractedValue": 1439
+                },
+                "displayName": "Exterior walls",
+                "damaged": true,
+                "name": "exteriorWalls",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Deck",
+                "damaged": false,
+                "name": "deck",
+                "invisible": false,
+                "value": 9000,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 1,
+                    "chance": 0.2,
+                    "cost": 1747,
+                    "prefix": "Minorly damaged",
+                    "detractedValueRange": {
+                        "min": 2500,
+                        "max": 4000
+                    },
+                    "costRange": {
+                        "min": 1000,
+                        "max": 2000
+                    },
+                    "detractedValue": 2854
+                },
+                "displayName": "Porch",
+                "damaged": true,
+                "name": "porch",
+                "invisible": false,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Balcony",
+                "damaged": false,
+                "name": "balcony",
+                "invisible": false,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Front yard",
+                "damaged": false,
+                "name": "frontYard",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 1,
+                    "chance": 0.5,
+                    "cost": 142,
+                    "prefix": "Messy",
+                    "detractedValueRange": {
+                        "min": 250,
+                        "max": 750
+                    },
+                    "costRange": {
+                        "min": 25,
+                        "max": 200
+                    },
+                    "detractedValue": 290
+                },
+                "displayName": "Backyard",
+                "damaged": true,
+                "name": "backYard",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Foundation",
+                "damaged": false,
+                "name": "foundation",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Interior walls",
+                "damaged": false,
+                "name": "interiorWalls",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 2,
+                    "chance": 0.2,
+                    "cost": 445,
+                    "prefix": "Faulty",
+                    "detractedValueRange": {
+                        "min": 750,
+                        "max": 1000
+                    },
+                    "costRange": {
+                        "min": 150,
+                        "max": 500
+                    },
+                    "detractedValue": 904
+                },
+                "displayName": "Lighting",
+                "damaged": true,
+                "name": "lighting",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Structural integrity",
+                "damaged": false,
+                "name": "structuralIntegrity",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Flooring",
+                "damaged": false,
+                "name": "flooring",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Plumbing",
+                "damaged": false,
+                "name": "plumbing",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Electrical system",
+                "damaged": false,
+                "name": "electricalSystem",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            }
+        ],
+        "walkScore": 66.84531424557086,
+        "streetName": "391 Cherry Road",
+        "bikeScore": 80.08621373361102,
+        "propertyType": "SINGLE",
+        "imageURL": "",
+        "artificialBidders": [
+            {
+                "maxBid": 828739.3434702312,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 867681.7701202472,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 913824.2749817579,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 934681.5687327305,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 783192.0966011825,
+                "name": "Auctioneer"
+            }
+        ],
+        "comps": [
+            {
+                "streetName": "2457 Center Rise",
+                "squareFootage": 4023,
+                "district": "Master Meadows",
+                "value": 915882,
+                "numberOfBedrooms": 4,
+                "numberOfBathrooms": 6
+            },
+            {
+                "streetName": "2192 Oak Hill",
+                "squareFootage": 4196,
+                "district": "Master Meadows",
+                "value": 1057996,
+                "numberOfBedrooms": 5,
+                "numberOfBathrooms": 6
+            },
+            {
+                "streetName": "592 Hemlock Rise",
+                "squareFootage": 4074,
+                "district": "Master Meadows",
+                "value": 905261,
+                "numberOfBedrooms": 5,
+                "numberOfBathrooms": 5
+            },
+            {
+                "streetName": "1392 Heather Rise",
+                "squareFootage": 4523,
+                "district": "Master Meadows",
+                "value": 1029897,
+                "numberOfBedrooms": 5,
+                "numberOfBathrooms": 6
+            },
+            {
+                "streetName": "3012 Sherwood Row",
+                "squareFootage": 4367,
+                "district": "Master Meadows",
+                "value": 994615,
+                "numberOfBedrooms": 5,
+                "numberOfBathrooms": 6
+            }
+        ],
+        "stories": 2,
+        "districtName": "Master Meadows",
+        "xomeValuationConfidence": 0.8682558395256217,
+        "buildingSize": 4232,
+        "transitScore": 45.059559500221475,
+        "lotSize": 0,
+        "generatedValue": 786635,
+        "titles": null,
+        "daysOnMarket": 49.23691421832416,
+        "assetType": "TRUSTEE",
+        "openingBid": 546423,
+        "leaderboard": {},
+        "districtId": "YPYljQw3MdqSqMGNpBA0",
+        "schools": [],
+        "medianListPrice": 803512,
+        "researchOptions": {
+            "0": {
+                "cost": 0,
+                "level": 1,
+                "name": "Visit Property",
+                "description": "Visit the property to see if you can gather any information yourself or by asking neighbors."
+            },
+            "1": {
+                "cost": 0,
+                "level": 2,
+                "name": "Douglas-Williams Real Estate Specialists",
+                "description": "A local mom & pop real estate agency. Will find out most details about a property."
+            },
+            "2": {
+                "cost": 0,
+                "level": 3,
+                "name": "Veritas Real Estate Group",
+                "description": "A larger real estate agency group. Takes higher commission for absolute certainty in information gathering."
+            }
+        },
+        "expectedValue": 1014653,
+        "propertyTax": 1.41,
+        "minimumSellValue": 888882.7143495906,
+        "age": 71,
+        "id": "7IBrPCfIg01wcRNhpGUl"
+    },
+    {
+        "amenities": [],
+        "researchables": {
+            "0": [],
+            "1": [
+                {
+                    "difficulty": 1,
+                    "modifier": {
+                        "cost": 1298,
+                        "detractedValueRange": {
+                            "min": 2000,
+                            "max": 3000
+                        },
+                        "costRange": {
+                            "min": 900,
+                            "max": 1500
+                        },
+                        "location": "deck",
+                        "locationDisplay": "Deck",
+                        "detractedValue": 2679
+                    },
+                    "description": "Minorly damaged deck"
+                },
+                {
+                    "difficulty": 1,
+                    "modifier": {
+                        "cost": 1186,
+                        "detractedValueRange": {
+                            "min": 2500,
+                            "max": 4000
+                        },
+                        "costRange": {
+                            "min": 1000,
+                            "max": 2000
+                        },
+                        "location": "porch",
+                        "locationDisplay": "Porch",
+                        "detractedValue": 3709
+                    },
+                    "description": "Minorly damaged porch"
+                },
+                {
+                    "difficulty": 1,
+                    "modifier": {
+                        "cost": 1073,
+                        "detractedValueRange": {
+                            "min": 2000,
+                            "max": 3000
+                        },
+                        "costRange": {
+                            "min": 900,
+                            "max": 1500
+                        },
+                        "location": "balcony",
+                        "locationDisplay": "Balcony",
+                        "detractedValue": 2811
+                    },
+                    "description": "Minorly damaged balcony"
+                },
+                {
+                    "difficulty": 1,
+                    "modifier": {
+                        "cost": 76,
+                        "detractedValueRange": {
+                            "min": 250,
+                            "max": 750
+                        },
+                        "costRange": {
+                            "min": 25,
+                            "max": 200
+                        },
+                        "location": "backYard",
+                        "locationDisplay": "Backyard",
+                        "detractedValue": 448
+                    },
+                    "description": "Messy backyard"
+                },
+                {
+                    "difficulty": 1,
+                    "modifier": {
+                        "cost": 1647,
+                        "detractedValueRange": {
+                            "min": 3000,
+                            "max": 5000
+                        },
+                        "costRange": {
+                            "min": 750,
+                            "max": 2500
+                        },
+                        "location": "foundation",
+                        "locationDisplay": "Foundation",
+                        "detractedValue": 4429
+                    },
+                    "description": "Damaged foundation"
+                }
+            ],
+            "2": [
+                {
+                    "difficulty": 2,
+                    "modifier": {
+                        "cost": 7781,
+                        "detractedValueRange": {
+                            "min": 7000,
+                            "max": 10000
+                        },
+                        "costRange": {
+                            "min": 5500,
+                            "max": 8000
+                        },
+                        "location": "essentialBathroom",
+                        "locationDisplay": "Bathroom",
+                        "detractedValue": 9882
+                    },
+                    "description": "Completely Ruined bathroom"
+                }
+            ],
+            "3": []
+        },
+        "rooms": [
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 62528,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 66653,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 41475,
+                "interior": true
+            },
+            {
+                "displayName": "Bedroom",
+                "damaged": false,
+                "name": "essentialBedroom",
+                "invisible": false,
+                "type": "BEDROOM",
+                "value": 45693,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 2,
+                    "chance": 0.05,
+                    "cost": 7781,
+                    "prefix": "Completely Ruined",
+                    "detractedValueRange": {
+                        "min": 7000,
+                        "max": 10000
+                    },
+                    "costRange": {
+                        "min": 5500,
+                        "max": 8000
+                    },
+                    "detractedValue": 9882
+                },
+                "displayName": "Bathroom",
+                "damaged": true,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 54737,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 46032,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 33485,
+                "interior": true
+            },
+            {
+                "displayName": "Bathroom",
+                "damaged": false,
+                "name": "essentialBathroom",
+                "invisible": false,
+                "type": "BATHROOM",
+                "value": 33117,
+                "interior": true
+            },
+            {
+                "displayName": "Kitchen",
+                "damaged": false,
+                "name": "essentialKitchen",
+                "invisible": false,
+                "type": "KITCHEN",
+                "value": 51345,
+                "interior": true
+            },
+            {
+                "displayName": "Living Room",
+                "damaged": false,
+                "name": "essentialLivingRoom",
+                "invisible": false,
+                "type": "LIVING_ROOM",
+                "value": 63162,
+                "interior": true
+            },
+            {
+                "displayName": "Basement",
+                "damaged": false,
+                "name": "basement",
+                "invisible": false,
+                "type": "NONESSENTIAL",
+                "value": 77338.46216395793,
+                "interior": true
+            },
+            {
+                "displayName": "Study",
+                "damaged": false,
+                "name": "study",
+                "invisible": false,
+                "type": "NONESSENTIAL",
+                "value": 60306.53612926763,
+                "interior": true
+            }
+        ],
+        "xomeValuationEstimate": 680383.0381737513,
+        "negotiationPrice": 425890.3186061327,
+        "occupancy": false,
+        "medianSoldPrice": 454940,
+        "description": "Lorem descripsum",
+        "areas": [
+            {
+                "displayName": "Front door",
+                "damaged": false,
+                "name": "frontDoor",
+                "invisible": false,
+                "value": 1000,
+                "interior": true
+            },
+            {
+                "displayName": "Back door",
+                "damaged": false,
+                "name": "backDoor",
+                "invisible": false,
+                "value": 1000,
+                "interior": true
+            },
+            {
+                "displayName": "Siding",
+                "damaged": false,
+                "name": "siding",
+                "invisible": false,
+                "value": 10000,
+                "interior": true
+            },
+            {
+                "displayName": "Roof",
+                "damaged": false,
+                "name": "roof",
+                "invisible": false,
+                "value": 20000,
+                "interior": true
+            },
+            {
+                "displayName": "Garage",
+                "damaged": false,
+                "name": "garage",
+                "invisible": false,
+                "value": 25000,
+                "interior": true
+            },
+            {
+                "displayName": "Pool",
+                "damaged": false,
+                "name": "pool",
+                "invisible": false,
+                "value": 40000,
+                "interior": true
+            },
+            {
+                "displayName": "Exterior walls",
+                "damaged": false,
+                "name": "exteriorWalls",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 1,
+                    "chance": 0.2,
+                    "cost": 1298,
+                    "prefix": "Minorly damaged",
+                    "detractedValueRange": {
+                        "min": 2000,
+                        "max": 3000
+                    },
+                    "costRange": {
+                        "min": 900,
+                        "max": 1500
+                    },
+                    "detractedValue": 2679
+                },
+                "displayName": "Deck",
+                "damaged": true,
+                "name": "deck",
+                "invisible": false,
+                "value": 9000,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 1,
+                    "chance": 0.2,
+                    "cost": 1186,
+                    "prefix": "Minorly damaged",
+                    "detractedValueRange": {
+                        "min": 2500,
+                        "max": 4000
+                    },
+                    "costRange": {
+                        "min": 1000,
+                        "max": 2000
+                    },
+                    "detractedValue": 3709
+                },
+                "displayName": "Porch",
+                "damaged": true,
+                "name": "porch",
+                "invisible": false,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 1,
+                    "chance": 0.2,
+                    "cost": 1073,
+                    "prefix": "Minorly damaged",
+                    "detractedValueRange": {
+                        "min": 2000,
+                        "max": 3000
+                    },
+                    "costRange": {
+                        "min": 900,
+                        "max": 1500
+                    },
+                    "detractedValue": 2811
+                },
+                "displayName": "Balcony",
+                "damaged": true,
+                "name": "balcony",
+                "invisible": false,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Front yard",
+                "damaged": false,
+                "name": "frontYard",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 1,
+                    "chance": 0.5,
+                    "cost": 76,
+                    "prefix": "Messy",
+                    "detractedValueRange": {
+                        "min": 250,
+                        "max": 750
+                    },
+                    "costRange": {
+                        "min": 25,
+                        "max": 200
+                    },
+                    "detractedValue": 448
+                },
+                "displayName": "Backyard",
+                "damaged": true,
+                "name": "backYard",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "damage": {
+                    "difficulty": 1,
+                    "chance": 0.1,
+                    "cost": 1647,
+                    "prefix": "Damaged",
+                    "detractedValueRange": {
+                        "min": 3000,
+                        "max": 5000
+                    },
+                    "costRange": {
+                        "min": 750,
+                        "max": 2500
+                    },
+                    "detractedValue": 4429
+                },
+                "displayName": "Foundation",
+                "damaged": true,
+                "name": "foundation",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Interior walls",
+                "damaged": false,
+                "name": "interiorWalls",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Lighting",
+                "damaged": false,
+                "name": "lighting",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Structural integrity",
+                "damaged": false,
+                "name": "structuralIntegrity",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Flooring",
+                "damaged": false,
+                "name": "flooring",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Plumbing",
+                "damaged": false,
+                "name": "plumbing",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            },
+            {
+                "displayName": "Electrical system",
+                "damaged": false,
+                "name": "electricalSystem",
+                "invisible": true,
+                "value": 0,
+                "interior": true
+            }
+        ],
+        "walkScore": 66.88025130532563,
+        "streetName": "2032 D. H. Row",
+        "bikeScore": 81.31019042952943,
+        "propertyType": "SINGLE",
+        "imageURL": "",
+        "artificialBidders": [
+            {
+                "maxBid": 698459.8007368386,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 599166.1305304044,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 523494.0956127914,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 630631.9828113165,
+                "name": "Underbidder"
+            },
+            {
+                "maxBid": 536931.2798951303,
+                "name": "Auctioneer"
+            }
+        ],
+        "comps": [
+            {
+                "streetName": "385 Maple Lane",
+                "squareFootage": 3897,
+                "district": "Master Meadows",
+                "value": 664135,
+                "numberOfBedrooms": 4,
+                "numberOfBathrooms": 4
+            },
+            {
+                "streetName": "729 Liberty Close",
+                "squareFootage": 4364,
+                "district": "Master Meadows",
+                "value": 683085,
+                "numberOfBedrooms": 4,
+                "numberOfBathrooms": 4
+            },
+            {
+                "streetName": "749 Center Road",
+                "squareFootage": 3880,
+                "district": "Master Meadows",
+                "value": 606235,
+                "numberOfBedrooms": 4,
+                "numberOfBathrooms": 4
+            },
+            {
+                "streetName": "663 High Vale",
+                "squareFootage": 3815,
+                "district": "Master Meadows",
+                "value": 633203,
+                "numberOfBedrooms": 4,
+                "numberOfBathrooms": 4
+            }
+        ],
+        "stories": 2,
+        "districtName": "Master Meadows",
+        "xomeValuationConfidence": 0.865822298225687,
+        "buildingSize": 4181,
+        "transitScore": 45.33108316935365,
+        "lotSize": 1,
+        "generatedValue": 602226,
+        "titles": null,
+        "daysOnMarket": 52.247906365280414,
+        "assetType": "TRUSTEE",
+        "openingBid": 283775,
+        "leaderboard": {},
+        "districtId": "YPYljQw3MdqSqMGNpBA0",
+        "schools": [
+            {
+                "chance": 0.18,
+                "multiplier": 1.04,
+                "impact": 1.03,
+                "name": "Verona Vista Middle School",
+                "schoolProperties": {
+                    "public": true,
+                    "rating": 5,
+                    "grades": {
+                        "min": 5,
+                        "max": 8
+                    }
+                },
+                "distanceFrom": 0.81
+            }
+        ],
+        "medianListPrice": 590450,
+        "researchOptions": {
+            "0": {
+                "cost": 0,
+                "level": 1,
+                "name": "Visit Property",
+                "description": "Visit the property to see if you can gather any information yourself or by asking neighbors."
+            },
+            "1": {
+                "cost": 0,
+                "level": 2,
+                "name": "Douglas-Williams Real Estate Specialists",
+                "description": "A local mom & pop real estate agency. Will find out most details about a property."
+            },
+            "2": {
+                "cost": 0,
+                "level": 3,
+                "name": "Veritas Real Estate Group",
+                "description": "A larger real estate agency group. Takes higher commission for absolute certainty in information gathering."
+            }
+        },
+        "expectedValue": 654747,
+        "propertyTax": 1.57,
+        "minimumSellValue": 575822.072701802,
+        "age": 73,
+        "id": "i9KZeXhcn7mNTp8kYb38"
+    }
+]
