@@ -131,7 +131,7 @@ def readJson():
     # summer day in Jackson city, extreme long-shot on iPhone 6
     
     for property in properties:
-        
+        print("*****************************************************")
         usePrompt1 = random.choice([False, True])
         prompt = "A charming "
         
@@ -163,6 +163,8 @@ def readJson():
         
         
         propertyType = property["propertyType"]   
+        print(propertyType)
+        print(propertyValue)
         if propertyType == "MOBILE":
             weather = ["a summer", "a winter", "a cloudy", "an overcast"]
             prompt = "A cozy, weathered mobile home nestled in a nice neighborhood surrounded by other mobile houses, with a clear blue sky overhead. The photo was taken from the street in " + random.choice(weather) + " day by a skilled photographer with a professional-grade DSLR camera."
@@ -172,6 +174,7 @@ def readJson():
                 propertyType = converMultiHouse()
             # "Cheap" properties
             if propertyValue <= 250000:
+                print("barato")
                 if propertyType == "SINGLE":
                     prompt2 += "a low-cost, one-story house built in 80's, nestled in a peaceful suburban neighborhood, surrounded by neat and tidy greenery, captured by a skilled photographer with a professional-grade DSLR camera."
                     prompt = prompt2
@@ -181,7 +184,7 @@ def readJson():
                 elif propertyType == "TOWNHOUSE":
                     prompt2 += "a townhouse, with cheap facade. The scene is rich with detail and character, featuring lush green trees. The image captures the essence of urban low class architecture in this iconic " + state + ". The prompt's careful attention to detail, composition, and mood ensures that the DALL-E model can produce stunning and high-quality images of one of " + district + "'s most iconic architectural styles. The photo was captured by a skilled photographer with a professional-grade DSLR camera"
                     prompt = prompt2
-                elif property == "CONDO":
+                elif propertyType == "CONDO":
                     prompt2 += "a low-cost, condo property from " + state + ", captured by a skilled photographer with a professional-grade DSLR camera, on a cloudy day."
                     prompt = prompt2
             
@@ -189,6 +192,7 @@ def readJson():
             elif propertyValue > 250000 and propertyValue <= 700000:
                 # "Cheap" properties
                 if int(rooms) > 10:
+                    print("barato")
                     if propertyType == "SINGLE":
                         prompt2 += "a low-cost, one-story house built in 80's, nestled in a peaceful suburban neighborhood, surrounded by neat and tidy greenery, captured by a skilled photographer with a professional-grade DSLR camera."
                         prompt = prompt2
@@ -198,12 +202,13 @@ def readJson():
                     elif propertyType == "TOWNHOUSE":
                         prompt2 += "a townhouse, with cheap facade. The scene is rich with detail and character, featuring lush green trees. The image captures the essence of urban low class architecture in this iconic " + state + ". The prompt's careful attention to detail, composition, and mood ensures that the DALL-E model can produce stunning and high-quality images of one of " + district + "'s most iconic architectural styles. The photo was captured by a skilled photographer with a professional-grade DSLR camera."
                         prompt = prompt2
-                    elif property == "CONDO":
+                    elif propertyType == "CONDO":
                         prompt2 += "a low-cost, condo property from " + state + ", captured by a skilled photographer with a professional-grade DSLR camera, on a cloudy day."
                         prompt = prompt2
 
                 # "Expensive" properties
                 elif int(rooms) <= 10:
+                    print("caro")
                     if propertyType == "SINGLE":
                         prompt += "single-family house, featuring a welcoming porch with steps leading up and a side porch. The photo is taken from the street at midday by a skilled photographer with a professional-grade DSLR camera."
                     
@@ -217,11 +222,12 @@ def readJson():
                         
                         prompt2 += "a townhouse, with elegant facade. The scene is rich with detail and character, featuring lush green trees. The image captures the essence of urban architecture in this iconic " + state + ". The prompt's careful attention to detail, composition, and mood ensures that the DALL-E model can produce stunning and high-quality images of one of " + district + "'s most iconic architectural styles. The photo was captured by a skilled photographer with a professional-grade DSLR camera"
                     
-                    elif property == "CONDO":
+                    elif propertyType == "CONDO":
                         prompt2 += "a a modern, sleek condo property from " + state + ", captured by a skilled photographer with a professional-grade DSLR camera, on a cloudy day."
                         prompt = prompt2
             # "Expensive" properties high-key lighting
             else:
+                print("caro")
                 if propertyType == "SINGLE":
                     prompt += "single-family house, featuring a welcoming porch with steps leading up and a side porch. The photo is taken from the street at midday by a skilled photographer with a professional-grade DSLR camera."
                 
@@ -235,7 +241,7 @@ def readJson():
                     
                     prompt2 += "a townhouse, with elegant facade. The scene is rich with detail and character, featuring lush green trees. The image captures the essence of urban architecture in this iconic " + state + ". The prompt's careful attention to detail, composition, and mood ensures that the DALL-E model can produce stunning and high-quality images of one of " + district + "'s most iconic architectural styles. The photo was captured by a skilled photographer with a professional-grade DSLR camera"
                 
-                elif property == "CONDO":
+                elif propertyType == "CONDO":
                     prompt2 += "a a modern, sleek condo property from " + state + ", captured by a skilled photographer with a professional-grade DSLR camera, on a cloudy day."
                     prompt = prompt2
                     
@@ -247,7 +253,8 @@ def readJson():
             
         else:
             finalPrompt = prompt2
-                    
+
+        print(finalPrompt)         
         try:
             response = openai.Image.create(
                 prompt = finalPrompt,
@@ -273,12 +280,11 @@ def readJson():
                     print('FAILED -', e)
         except openai.error.InvalidRequestError as e:
             return str(e)
-        print(finalPrompt)
 
     # Closing file
     f.close()
-
-    return str(prompt)
+    
+    return str(finalPrompt)
 
 @app.route("/resize")
 def resize():
